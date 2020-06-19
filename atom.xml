@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.yocoh.cn/"/>
-  <updated>2020-06-19T12:11:31.022Z</updated>
+  <updated>2020-06-19T14:21:51.375Z</updated>
   <id>https://blog.yocoh.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>不用命令行给自己搭一个图床吧</title>
+    <link href="https://blog.yocoh.cn/2020/06/19/%E7%BB%99%E8%87%AA%E5%B7%B1%E6%90%AD%E4%B8%80%E4%B8%AA%E5%9B%BE%E5%BA%8A%E5%90%A7/"/>
+    <id>https://blog.yocoh.cn/2020/06/19/%E7%BB%99%E8%87%AA%E5%B7%B1%E6%90%AD%E4%B8%80%E4%B8%AA%E5%9B%BE%E5%BA%8A%E5%90%A7/</id>
+    <published>2020-06-19T13:47:01.000Z</published>
+    <updated>2020-06-19T14:21:51.375Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;http://img.yocoh.cn/images/2020/06/19/-3.jpg&quot; alt=&quot;-3.jpg&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我使用的是&lt;a href=&quot;https://chevereto.com/&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="blog" scheme="https://blog.yocoh.cn/tags/blog/"/>
+    
+  </entry>
   
   <entry>
     <title>给未适配Valine的主题添加Valine评论功能</title>
@@ -68,54 +95,6 @@
     
     
       <category term="docs" scheme="https://blog.yocoh.cn/categories/docs/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>hello,hexo</title>
-    <link href="https://blog.yocoh.cn/2020/06/18/hello-world-1/"/>
-    <id>https://blog.yocoh.cn/2020/06/18/hello-world-1/</id>
-    <published>2020-06-18T11:05:24.000Z</published>
-    <updated>2020-06-18T15:42:05.676Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;hexo-theme-Typography&quot;&gt;&lt;a href=&quot;#hexo-theme-Typography&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="docs" scheme="https://blog.yocoh.cn/categories/docs/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://blog.yocoh.cn/2020/06/18/hello-world/"/>
-    <id>https://blog.yocoh.cn/2020/06/18/hello-world/</id>
-    <published>2020-06-18T10:48:02.983Z</published>
-    <updated>2020-06-18T10:48:02.983Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
-      
-    
-    </summary>
-    
     
     
   </entry>
