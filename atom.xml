@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.yocoh.cn/"/>
-  <updated>2020-06-18T15:42:05.670Z</updated>
+  <updated>2020-06-19T11:45:18.670Z</updated>
   <id>https://blog.yocoh.cn/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>给未适配Valine的主题添加Valine评论功能</title>
+    <link href="https://blog.yocoh.cn/2020/06/19/addcomments/"/>
+    <id>https://blog.yocoh.cn/2020/06/19/addcomments/</id>
+    <published>2020-06-19T09:04:30.000Z</published>
+    <updated>2020-06-19T11:45:18.670Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;其实原先主题自带了两种评论方式为博客设置评论服务：&lt;a href=&quot;https://disqus.com/&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="blog" scheme="https://blog.yocoh.cn/categories/blog/"/>
+    
+    
+      <category term="blog插件" scheme="https://blog.yocoh.cn/tags/blog%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>markdown笔记</title>
     <link href="https://blog.yocoh.cn/2020/06/18/markdown-note/"/>
     <id>https://blog.yocoh.cn/2020/06/18/markdown-note/</id>
     <published>2020-06-18T11:06:36.000Z</published>
-    <updated>2020-06-18T15:42:05.670Z</updated>
+    <updated>2020-06-19T09:24:17.921Z</updated>
     
     <summary type="html">
     
