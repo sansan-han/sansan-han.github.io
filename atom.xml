@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://blog.yocoh.cn/"/>
+  <link href="https://yocoh.cn/"/>
   <updated>2020-06-19T14:21:51.375Z</updated>
-  <id>https://blog.yocoh.cn/</id>
+  <id>https://yocoh.cn/</id>
   
   <author>
     <name>饮夏</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>不用命令行给自己搭一个图床吧</title>
-    <link href="https://blog.yocoh.cn/2020/06/19/setimgserver/"/>
-    <id>https://blog.yocoh.cn/2020/06/19/setimgserver/</id>
+    <link href="https://yocoh.cn/2020/06/19/setimgserver/"/>
+    <id>https://yocoh.cn/2020/06/19/setimgserver/</id>
     <published>2020-06-19T13:47:01.000Z</published>
     <updated>2020-06-19T14:21:51.375Z</updated>
     
@@ -39,14 +39,14 @@
     
     
     
-      <category term="blog" scheme="https://blog.yocoh.cn/tags/blog/"/>
+      <category term="blog" scheme="https://yocoh.cn/tags/blog/"/>
     
   </entry>
   
   <entry>
     <title>给未适配Valine的主题添加Valine评论功能</title>
-    <link href="https://blog.yocoh.cn/2020/06/19/addcomments/"/>
-    <id>https://blog.yocoh.cn/2020/06/19/addcomments/</id>
+    <link href="https://yocoh.cn/2020/06/19/addcomments/"/>
+    <id>https://yocoh.cn/2020/06/19/addcomments/</id>
     <published>2020-06-19T09:04:30.000Z</published>
     <updated>2020-06-19T12:11:31.022Z</updated>
     
@@ -64,17 +64,17 @@
     </summary>
     
     
-      <category term="blog" scheme="https://blog.yocoh.cn/categories/blog/"/>
+      <category term="blog" scheme="https://yocoh.cn/categories/blog/"/>
     
     
-      <category term="blog插件" scheme="https://blog.yocoh.cn/tags/blog%E6%8F%92%E4%BB%B6/"/>
+      <category term="blog插件" scheme="https://yocoh.cn/tags/blog%E6%8F%92%E4%BB%B6/"/>
     
   </entry>
   
   <entry>
     <title>markdown笔记</title>
-    <link href="https://blog.yocoh.cn/2020/06/18/markdown-note/"/>
-    <id>https://blog.yocoh.cn/2020/06/18/markdown-note/</id>
+    <link href="https://yocoh.cn/2020/06/18/markdown-note/"/>
+    <id>https://yocoh.cn/2020/06/18/markdown-note/</id>
     <published>2020-06-18T11:06:36.000Z</published>
     <updated>2020-06-19T09:24:17.921Z</updated>
     
@@ -94,7 +94,7 @@
     </summary>
     
     
-      <category term="docs" scheme="https://blog.yocoh.cn/categories/docs/"/>
+      <category term="docs" scheme="https://yocoh.cn/categories/docs/"/>
     
     
   </entry>
