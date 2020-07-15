@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yocoh.cn/"/>
-  <updated>2020-06-19T14:21:51.375Z</updated>
+  <updated>2020-07-15T13:39:46.839Z</updated>
   <id>https://yocoh.cn/</id>
   
   <author>
@@ -15,6 +15,117 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>量子力学期末汇报</title>
+    <link href="https://yocoh.cn/2020/07/02/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E6%9C%9F%E6%9C%AB%E6%B1%87%E6%8A%A5/"/>
+    <id>https://yocoh.cn/2020/07/02/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E6%9C%9F%E6%9C%AB%E6%B1%87%E6%8A%A5/</id>
+    <published>2020-07-02T05:25:35.000Z</published>
+    <updated>2020-07-15T13:39:46.839Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;center&gt;&lt;h1&gt;
+    漫谈量子力学
+    &lt;/h1&gt;&lt;/center&gt;
+&lt;h3 id=&quot;引言&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#引言&quot;&gt;&lt;/a&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="课程" scheme="https://yocoh.cn/categories/%E8%AF%BE%E7%A8%8B/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>光纤布拉格光栅简述</title>
+    <link href="https://yocoh.cn/2020/07/01/%E5%85%89%E7%BA%A4%E5%B8%83%E6%8B%89%E6%A0%BC%E5%85%89%E6%A0%85%E7%AE%80%E8%BF%B0/"/>
+    <id>https://yocoh.cn/2020/07/01/%E5%85%89%E7%BA%A4%E5%B8%83%E6%8B%89%E6%A0%BC%E5%85%89%E6%A0%85%E7%AE%80%E8%BF%B0/</id>
+    <published>2020-07-01T04:34:00.000Z</published>
+    <updated>2020-07-15T13:35:38.698Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;center&gt;&lt;h1&gt;
+    光纤布拉格光栅简述
+    &lt;/h1&gt;&lt;/center&gt;
+&lt;h4 id=&quot;摘要&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#摘要&quot;&gt;&lt;/a&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="课程" scheme="https://yocoh.cn/categories/%E8%AF%BE%E7%A8%8B/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>光电子期末总结</title>
+    <link href="https://yocoh.cn/2020/06/28/%E5%85%89%E7%94%B5%E5%AD%90/"/>
+    <id>https://yocoh.cn/2020/06/28/%E5%85%89%E7%94%B5%E5%AD%90/</id>
+    <published>2020-06-28T06:29:16.000Z</published>
+    <updated>2020-07-15T13:34:54.931Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;center&gt;&lt;h1&gt;
+    光电子期末总结
+    &lt;/h1&gt;&lt;/center&gt;
+&lt;h3 id=&quot;一-基本原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#一-基本原理&quot;&gt;&lt;/a&gt; 一、基本原理&lt;/h3&gt;
+&lt;h4
+        
+      
+    
+    </summary>
+    
+    
+      <category term="课程" scheme="https://yocoh.cn/categories/%E8%AF%BE%E7%A8%8B/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>毛概期末汇报</title>
+    <link href="https://yocoh.cn/2020/06/26/%E6%AF%9B%E6%A6%82%E6%B1%87%E6%8A%A5/"/>
+    <id>https://yocoh.cn/2020/06/26/%E6%AF%9B%E6%A6%82%E6%B1%87%E6%8A%A5/</id>
+    <published>2020-06-25T16:31:34.000Z</published>
+    <updated>2020-07-15T13:34:54.883Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;从covid-19看社会主义制度的优越性&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#从covid-19看社会主义制度的优越性&quot;&gt;&lt;/a&gt; 从COVID-19看社会主义制度的优越性&lt;/h3&gt;
+&lt;h4 id=&quot;引言&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="课程" scheme="https://yocoh.cn/categories/%E8%AF%BE%E7%A8%8B/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>不用命令行给自己搭一个图床吧</title>
@@ -29,7 +140,7 @@
       
         
         
-          &lt;p&gt;&lt;img src=&quot;http://img.yocoh.cn/images/2020/06/19/-3.jpg&quot; alt=&quot;-3.jpg&quot;&gt;&lt;/p&gt;
+          &lt;p&gt;&lt;img src=&quot;http://img.yocoh.cn/images/2020/06/19/-3.jpg&quot; alt=&quot;-3.jpg&quot; /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;我使用的是&lt;a href=&quot;https://chevereto.com/&quot;
         
@@ -48,7 +159,7 @@
     <link href="https://yocoh.cn/2020/06/19/addcomments/"/>
     <id>https://yocoh.cn/2020/06/19/addcomments/</id>
     <published>2020-06-19T09:04:30.000Z</published>
-    <updated>2020-06-19T12:11:31.022Z</updated>
+    <updated>2020-07-15T13:25:30.604Z</updated>
     
     <summary type="html">
     
@@ -56,7 +167,8 @@
       
         
         
-          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;blockquote&gt;
+          &lt;h1 id=&quot;前言&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#前言&quot;&gt;&lt;/a&gt; 前言&lt;/h1&gt;
+&lt;blockquote&gt;
 &lt;p&gt;其实原先主题自带了两种评论方式为博客设置评论服务：&lt;a href=&quot;https://disqus.com/&quot;
         
       
@@ -72,33 +184,6 @@
   </entry>
   
   <entry>
-    <title>光电子期末总结</title>
-    <link href="https://yocoh.cn/2020/06/19/%E5%85%89%E7%94%B5%E5%AD%90%E6%9C%9F%E6%9C%AB%E6%80%BB%E7%BB%93/"/>
-    <id>https://yocoh.cn/2020/06/19/%E5%85%89%E7%94%B5%E5%AD%90%E6%9C%9F%E6%9C%AB%E6%80%BB%E7%BB%93/</id>
-    <published>2020-06-19T09:04:30.000Z</published>
-    <updated>2020-06-24T09:51:13.485Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;一、基本原理&quot;&gt;&lt;a href=&quot;#一、基本原理&quot; class=&quot;headerlink&quot; title=&quot;一、基本原理&quot;&gt;&lt;/a&gt;一、基本原理&lt;/h3&gt;&lt;h4 id=&quot;1-光的基本性质&quot;&gt;&lt;a href=&quot;#1-光的基本性质&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="lesson" scheme="https://yocoh.cn/categories/lesson/"/>
-    
-    
-      <category term="光电子" scheme="https://yocoh.cn/tags/%E5%85%89%E7%94%B5%E5%AD%90/"/>
-    
-  </entry>
-  
-  <entry>
     <title>markdown笔记</title>
     <link href="https://yocoh.cn/2020/06/18/markdown-note/"/>
     <id>https://yocoh.cn/2020/06/18/markdown-note/</id>
@@ -107,11 +192,13 @@
     
     <summary type="html">
     
-      &lt;p&gt;本博客文章均使用markdown编写，以下是部分markdown语法。  &lt;/p&gt;
-&lt;h1 id=&quot;一、标题&quot;&gt;&lt;a href=&quot;#一、标题&quot; class=&quot;headerlink&quot; title=&quot;一、标题&quot;&gt;&lt;/a&gt;一、标题&lt;/h1&gt;&lt;p&gt;标题与html中的h标签类似，想要设置为标题的文字前面加#来表示&lt;br&gt;一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。&lt;/p&gt;
+      &lt;p&gt;本博客文章均使用markdown编写，以下是部分markdown语法。&lt;/p&gt;
+&lt;h1 id=&quot;一-标题&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#一-标题&quot;&gt;&lt;/a&gt; 一、标题&lt;/h1&gt;
+&lt;p&gt;标题与html中的h标签类似，想要设置为标题的文字前面加#来表示&lt;br /&gt;
+一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。&lt;/p&gt;
 &lt;p&gt;注：标准语法一般在#后跟个空格再写文字，&lt;/p&gt;
 &lt;p&gt;示例：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# 这是一级标题
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;&quot;&gt;# 这是一级标题
 ## 这是二级标题
 ### 这是三级标题
 #### 这是四级标题
