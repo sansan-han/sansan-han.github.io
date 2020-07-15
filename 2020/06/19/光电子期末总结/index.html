@@ -1,0 +1,125 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="饮夏"><link href="https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css" rel="stylesheet"><script>(function(d) {
+  var config = {
+    kitId: 'mtg4doj',
+    scriptTimeout: 3000,
+    async: true
+  },
+  h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+})(document);
+</script><title>光电子期末总结 · 饮夏的blog</title><meta name="description" content="一、基本原理1.光的基本性质1.1.1 麦克斯韦方程组积分形式的麦克斯韦方程组：
+
+\oiint_SE\bullet dS=\frac{\sum q}{\varepsilon_0}=\frac{1}{\varepsilon_0}\iiint_V\rho dV
+\oiint_SB\bullet dS="><meta name="keywords" content=""><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/style.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body><div id="stage" class="container"><div class="row"><div id="side-bar" class="col-sm-3 col-xs-12 side-container invisible"><div class="vertical-text site-title"><h3 tabindex="-1" class="site-title-small"><a href="/" class="a-title">与世界分享世界</a></h3><h1 tabindex="-1" class="site-title-large"><a href="/" class="a-title">饮夏</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div id="site-nav" class="site-title-links"><ul><li><a href="/">首页</a></li><li><a href="/archives">归档</a></li><li><a href="/categories">分类</a></li><li><a href="/tags">标签</a></li><li><a href="/about/index.html">关于</a></li><li class="soc"><a href="https://github.com/sansan-han" target="_blank" rel="noopener noreferrer"><i class="fa fa-github">&nbsp;</i></a><a href="http://weibo.com/u/5943175365" target="_blank" rel="noopener noreferrer"><i class="fa fa-weibo">&nbsp;</i></a></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2020&nbsp;<a target="_blank" href="https://yocoh.cn" rel="noopener noreferrer">饮夏</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div><div id="main-container" class="col-sm-9 col-xs-12 main-container invisible"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post-container"><p class="post-title"><a>光电子期末总结</a></p><p class="post-meta"><span class="date meta-item">发布于&nbsp;2020-06-19</span><span class="meta-item"><i class="fa fa-folder"></i><span>&nbsp;</span><a href="/categories/lesson/" title="lesson" class="a-tag">lesson</a><span>&nbsp;</span></span><span class="meta-item"><i class="fa fa-tag"></i><span>&nbsp;</span><a href="/tags/光电子/" title="光电子" class="a-tag">光电子</a><span>&nbsp;</span></span></p><p class="post-abstract"><h3 id="一、基本原理"><a href="#一、基本原理" class="headerlink" title="一、基本原理"></a>一、基本原理</h3><h4 id="1-光的基本性质"><a href="#1-光的基本性质" class="headerlink" title="1.光的基本性质"></a>1.光的基本性质</h4><h5 id="1-1-1-麦克斯韦方程组"><a href="#1-1-1-麦克斯韦方程组" class="headerlink" title="1.1.1 麦克斯韦方程组"></a>1.1.1 麦克斯韦方程组</h5><p>积分形式的麦克斯韦方程组：</p>
+<script type="math/tex; mode=display">
+\oiint_SE\bullet dS=\frac{\sum q}{\varepsilon_0}=\frac{1}{\varepsilon_0}\iiint_V\rho dV</script><script type="math/tex; mode=display">
+\oiint_SB\bullet dS=0</script><script type="math/tex; mode=display">
+\oint_LE\bullet dl=-\frac{d\Phi_B}{dt}=-\iint_S\frac{\partial B}{\partial t}\bullet dS</script><script type="math/tex; mode=display">
+\oint_LB\bullet dl=\mu_0J+\mu_0\varepsilon_0\iint_S\frac{\partial E}{\partial t}\bullet dS</script><p>麦克斯韦方程组蕴含着：</p>
+<ol>
+<li>电场是有源场，电荷是电场的源。</li>
+<li>磁场是无源场，磁力线是闭合的。</li>
+<li>变化的磁场产生电场。</li>
+<li>变化的电场产生磁场。</li>
+</ol>
+<h5 id="1-1-2-电磁场的波动方程与特解"><a href="#1-1-2-电磁场的波动方程与特解" class="headerlink" title="1.1.2 电磁场的波动方程与特解"></a>1.1.2 电磁场的波动方程与特解</h5><p>利用矢量运算便可由麦克斯韦方程组推出媒质为无耗媒质时的方程：</p>
+<script type="math/tex; mode=display">
+\begin{array}{l}
+\nabla^{2} \boldsymbol{E}-\frac{1}{v^{2}} \frac{\partial^{2} \boldsymbol{E}}{\partial^{2} t}=0 \\
+\nabla^{2} \boldsymbol{H}-\frac{1}{v^{2}} \frac{\partial^{2} \boldsymbol{H}}{\partial^{2} t}=0
+\end{array}</script><p>这是交变电磁场所满足的波动方程，又叫亥姆霍兹方程。它表明交变电场与交变磁场是以速度</p>
+<script type="math/tex; mode=display">
+v=\frac{1}{\sqrt{\mu \varepsilon}}</script><p>传播的电磁波。加上边界条件就可以确定空间中的时变电磁波。</p>
+<p><img src="http://img.yocoh.cn/images/2020/06/24/image.png" alt="图1.1 电磁波的传播"></p>
+<p>波动方程的特解：</p>
+<ol>
+<li><p>平面电磁波：</p>
+<script type="math/tex; mode=display">
+E=E_1\left(p\right)+E_2\left(p\right)=E_1\left(z-\upsilon t\right)+E_2(z+\upsilon t)</script></li>
+<li><p>柱面波：</p>
+<p>当r较大（远大于波长时），单色柱面波可表示为：</p>
+<script type="math/tex; mode=display">
+E=\frac{A}{\sqrt r}e^{-j(\omega t-kr)}</script></li>
+<li><p>高斯光束：</p>
+<script type="math/tex; mode=display">
+\boldsymbol{E}_{00}(r, z, t)=\frac{\boldsymbol{E}_{0}}{\omega(z)} \mathrm{e}^{-\frac{r^{2}}{\omega^{2}(z)}} \mathrm{e}^{\mathrm{j}\left[k\left(z+\frac{r^{2}}{2 R(z)}\right)-\tan ^{-1} \frac{z}{f}\right]} \mathrm{e}^{\mathrm{j} \omega t}</script></li>
+<li><p>球面波：</p>
+</li>
+</ol>
+<script type="math/tex; mode=display">
+E=\frac{E_1(r-\upsilon t)}{r}+\frac{E_2(r+\upsilon t)}{r}\ \</script><h4 id="2-半导体物理基础"><a href="#2-半导体物理基础" class="headerlink" title="2.半导体物理基础"></a>2.半导体物理基础</h4><h5 id="1-2-1-能带理论"><a href="#1-2-1-能带理论" class="headerlink" title="1.2.1 能带理论"></a>1.2.1 能带理论</h5><p><img src="http://img.yocoh.cn/images/2020/06/24/image397c9bab90f20654.png" alt="图1.2 电子共有化能级扩展为能带示意图"></p>
+<p>在理想的绝对零度下， 硅、锗、金刚石等共价键结合的晶体中，从其最内层的电子直到最外边的价电子都正好填满相应的能带。能量最高的是价电子填满的能带称为价带。价带以上的能带基本上是空的，其中最低的能带称为导带。价带与导带之间的区域称为禁带。</p>
+<p>禁带区域不允许电子的存在。处于价带中的电子，受原子束缚，不能参与导电；而处于导带中的电子，不受原子束缚，是自由电子，能参与导电。价电子要跃迁到导带成为自由电子，至少要吸收禁带宽度的能量。</p>
+<p><img src="http://img.yocoh.cn/images/2020/06/24/image83626c5010ee74b9.png" alt="图1.3 金属、半导体、绝缘体的能带图"></p>
+<p>一般半导体的材料能隙$E_g$约为$1~3eV$，介于导体与绝缘体之间，所以只要给予适当的条件激发，或改变能隙间距就能使之导电。</p>
+<h5 id="1-2-2-导电特性"><a href="#1-2-2-导电特性" class="headerlink" title="1.2.2 导电特性"></a>1.2.2 导电特性</h5><p>材料的导电性是由导带中含有的电子数量决定。当电子从价带获得能量而跳跃至导电带时，电子就可以在带间任意移动而导电。材料中载流子（carrier）的数量对半导体的导电特性极为重要。这可以通过在半导体中有选择的加入其他“杂质”来控制。如果我们在纯硅中掺杂少许的砷或磷（最外层有5个电子），就会多出1个自由电子，这样就形成N型半导体；如果我们在纯硅中掺入少许的硼（最外层有3个电子），就反而少了1个电子，而形成一个空穴，这样就形成P型半导体（少了1个带负电荷的原子，可视为多了1个正电荷）。</p>
+<h5 id="1-2-3-光吸收特性"><a href="#1-2-3-光吸收特性" class="headerlink" title="1.2.3 光吸收特性"></a>1.2.3 光吸收特性</h5><p>半导体材料吸收光子能量转换成电能是光电器件的工作基础。光垂直入射到半导体表<br>面时，进入到半导体内的辐射通量遵照吸收定律：</p>
+<script type="math/tex; mode=display">
+\Phi(x)=\Phi_{0}(1-R) \mathrm{e}^{-a x}</script><p>利用电动力学中平面电磁波在物质中传播时衰减的规律，可以得到吸收系数与波长成 反比的关系，入射光波长愈大，吸收越小。即：</p>
+<script type="math/tex; mode=display">
+\alpha=4 \pi \frac{\beta}{\lambda}</script><p>其中$\beta$为消光系数，仅与材料有关。</p>
+<p>根据入射光子能量大小，对光的吸收又分为本征吸收与非本征吸收。如果半导<br>体吸收了光子的能量使价带中的电子被激发到导带，在价带中留下空穴，从而产生等量的电 子与空穴，这种吸收过程叫作本征吸收。产生本征吸收的条件是，入射光子的能量至少要等于材料的禁带宽度，即$h \nu \geqslant E_{k}$.</p>
+<p>半导体吸收光子后，如果光子能量不足以使价带中的电子激发到导带，就会产生非本<br>征吸收。</p>
+<h5 id="1-2-4-PN结"><a href="#1-2-4-PN结" class="headerlink" title="1.2.4 PN结"></a>1.2.4 PN结</h5><p>一块半导体一侧掺杂成Ｐ型半导体，另一侧掺杂成Ｎ型半导体，中间二者相连的接触<br>面称为ＰＮ结。</p>
+<p><img src="http://img.yocoh.cn/images/2020/06/24/imagea1a41dba10c7ed19.png" alt="图1.4 PN结的伏安特性曲线"></p>
+<h4 id="3-普朗克公式"><a href="#3-普朗克公式" class="headerlink" title="3.普朗克公式"></a>3.普朗克公式</h4><script type="math/tex; mode=display">
+M_b\left(\lambda,T\right)=\frac{2\pi h c^2}{\lambda^5(e^{hc}{(\lambda T k_B)}-1)}</script><p>普朗克公式给出了黑体的单色辐射亮度与辐射波长和黑体温度的关系。</p>
+<h3 id="二、激光器"><a href="#二、激光器" class="headerlink" title="二、激光器"></a>二、激光器</h3><h4 id="1-工作原理"><a href="#1-工作原理" class="headerlink" title="1.工作原理"></a>1.工作原理</h4><h5 id="2-1-1-受激辐射"><a href="#2-1-1-受激辐射" class="headerlink" title="2.1.1 受激辐射"></a>2.1.1 受激辐射</h5><p>一个光子射向粒子，高能级的原子会向低能级的原子跃迁同时发射一个和射来的光子相同状态的光子：${(dN_{21})}_{受激}=B_{21}μ(ν)N_2dt$.</p>
+<h5 id="2-1-2-受激吸收"><a href="#2-1-2-受激吸收" class="headerlink" title="2.1.2 受激吸收"></a>2.1.2 受激吸收</h5><p>一个光子射向粒子，低能级的原子会吸收这个光子并向高能级跃迁，从而使得原子能量提高：${(dN_{12})}_{吸收}=B_{12}μ(ν)N_1dt$.</p>
+<h5 id="2-1-3-粒子数反转"><a href="#2-1-3-粒子数反转" class="headerlink" title="2.1.3 粒子数反转"></a>2.1.3 粒子数反转</h5><p>当$N_2&gt;N_1$时，使得光子数增加，宏观上表现为光放大。</p>
+<h5 id="2-1-4-光学谐振腔"><a href="#2-1-4-光学谐振腔" class="headerlink" title="2.1.4 光学谐振腔"></a>2.1.4 光学谐振腔</h5><p>虽然激活介质中实现粒子数反转就可以做成光放大器，但是本身光的传播方向还是各向异性的。我们的目的是使得某一方向的光得到放大和加强，以便在这些方向超过自发辐射，而其他方向上的光被抑制，最后获得方向性和单色性很好的光。而实现这一目的，我们需要在激活物质的两端放置相互平行的反射镜，这对以反射镜为端面的腔体就叫做谐振腔。</p>
+<h4 id="2-激光器举例"><a href="#2-激光器举例" class="headerlink" title="2.激光器举例"></a>2.激光器举例</h4><h5 id="2-2-1-He-Ne激光器"><a href="#2-2-1-He-Ne激光器" class="headerlink" title="2.2.1 He-Ne激光器"></a>2.2.1 He-Ne激光器</h5><p>$He-Ne$激光器是最早研制成功的气体激光器。在可见光及红外波段可产生多条谱线。其中最强的是$632.8nm,1.15\mu m$和$3.39\mu m$三条谱线。由于其可输出连续可见光，而且具有结 构简单、体积较小、价格低廉等优点，在准直、定位、全息照相、测量、精密计量、光盘录放等方 面得到了广泛应用。</p>
+<p><img src="http://img.yocoh.cn/images/2020/06/24/image459673f150207065.png" alt="图2.1 He-Ne激光器基本结构"></p>
+<h5 id="2-2-2-CO-2-激光器"><a href="#2-2-2-CO-2-激光器" class="headerlink" title="2.2.2 $CO_2$激光器"></a>2.2.2 $CO_2$激光器</h5><p>$CO_2$激光器的工作物质主要是二氧化碳，掺入少量氮气，氦气等气体，是典型的分子气体激光器。二氧化碳激光器广泛应用于金属材料的切割、焊接、热处理、宝石加工、 激光打孔和手术治疗等方面。</p>
+<h3 id="三、探测器"><a href="#三、探测器" class="headerlink" title="三、探测器"></a>三、探测器</h3><h4 id="1-光电探测器"><a href="#1-光电探测器" class="headerlink" title="1.光电探测器"></a>1.光电探测器</h4><p>光电探测器是指在光辐射作用下，将光辐射能变为电信号的一类器件。一般将光电探测<br>器分为两大类：一类是利用光电效应制成的器件，称为光子探测器，如光电倍增管、光电探测器和光伏探测器等，这类器件在吸收光子后，直接引起内部电子状 态的改变，将非传导电子变为传导电子输出电信号。其特点是广播频率表现出选择性，响应速度一般比较快。另一类是利用光热效应制成的器件，称为热探测器。这类器件吸收光辐射后，并不直接引起内部电子状态的改变，而是把吸收的光能变为热能，从而引起探测元件温度上升，温度上升的结果引起探测元件的电学性质或其他物理性质发生变化，最后将这些性质的变化再转换为输出电信号。一般没有选择性，响应速度慢。</p>
+<h4 id="2-光子探测器"><a href="#2-光子探测器" class="headerlink" title="2.光子探测器"></a>2.光子探测器</h4><h5 id="3-2-1-光电倍增管"><a href="#3-2-1-光电倍增管" class="headerlink" title="3.2.1 光电倍增管"></a>3.2.1 光电倍增管</h5><p>​    光照射在某些材料表面时，如果光子能量足够大，就能使表现发射出电子，这一现象叫做光电子发射效应。</p>
+<p>光电倍增管是一种内部有电子倍增结构的真空光电管，内增益极高。</p>
+<p><img src="http://img.yocoh.cn/images/2020/06/24/image194bbac4c47e65d2.png" alt="图3.1 光电倍增管结构示意图"></p>
+<p>主要结构有光窗，光电阴极，电子光学系统，电子倍增系统。光窗是入射光的通道，同时也是对光吸收较多的部分。因为玻璃对光的吸收与波长有关，波长越短吸收得越多，所以，倍增管光谱特性的短波阈值决定于光窗材料。光电阴极的作用是光电转换，它可接收入射光，也可向外发射光电子。制作光电阴极的材料多是化合物。光电阴极材料决定了光电倍增管光谱特性的截止波长，同时对整管灵敏度也起决定性作用。电子光学系统通过电场加速和控制电子运动路线，起到如下两方面的作用：一是通过上，使下一级的收集率接近１；二是使前一级各部分发射出来的电子落到后一级上时，所经历的时间尽可能相同，使渡越时间分散最小。倍增系统由许多倍增极组成，每个倍增极的接收面都由二次电子倍增材料构成，具有使一次电子倍增的能力．因此，倍增系统是决定整管灵敏度最关键的部分。</p>
+<h5 id="3-2-2-光伏探测器"><a href="#3-2-2-光伏探测器" class="headerlink" title="3.2.2 光伏探测器"></a>3.2.2 光伏探测器</h5><p>光伏探测器的工作原理之一就是光伏效应。在稳定条件下，PN结上的光电压和流经负载的光电流I的关系为</p>
+<script type="math/tex; mode=display">
+I=I_0\left(e^\frac{qU}{kT}-1\right)-I_p=I_d-I_p</script><h4 id="3-热探测器"><a href="#3-热探测器" class="headerlink" title="3.热探测器"></a>3.热探测器</h4><h5 id="3-3-1-光热效应"><a href="#3-3-1-光热效应" class="headerlink" title="3.3.1 光热效应"></a>3.3.1 光热效应</h5><p>材料吸收光能量后引起材料的温度升高，伴随着温升材料的某种物理性质发生变化，这种现象称为光热效应。光热效应分为：温差电效应，热点导效应和热释效应。</p>
+<h5 id="3-3-2-热流方程"><a href="#3-3-2-热流方程" class="headerlink" title="3.3.2 热流方程"></a>3.3.2 热流方程</h5><script type="math/tex; mode=display">
+\alpha\Phi=C_Hd(∆T)dt+G∙∆T</script><h5 id="3-3-3-测辐射热计"><a href="#3-3-3-测辐射热计" class="headerlink" title="3.3.3 测辐射热计"></a>3.3.3 测辐射热计</h5><p>测辐射热计又称热敏电阻，是利用某些热敏材料的电阻率随温度发生变化的特性而制成的电阻性元件，按热敏材料的不同，分为金属导体（如镍、铋、铂）和半导体（如锰、钴等的氧化物混合烧结而成）两种。</p>
+<p>测辐射热计的工作原理是：热敏材料吸收光辐射，产生温升，从而引起材料的电阻发生变化。将测辐射热计与负载电阻等构成闭合回路，测量负载电阻两端的电压变化，就可探知光辐射的情况。</p>
+<p><img src="http://img.yocoh.cn/images/2020/06/24/image5dd12d2726e418ee.png" alt="图3.2 热敏电阻结构示意图"></p>
+<h3 id="四、调制"><a href="#四、调制" class="headerlink" title="四、调制"></a>四、调制</h3><h4 id="1-调制原理"><a href="#1-调制原理" class="headerlink" title="1.调制原理"></a>1.调制原理</h4><p>光调制指的是使光信号的一个或几个特征参量按被传送信息的特征变化，以实现信息检测传送目的的方法。</p>
+<ol>
+<li>在光电检测中常常有自然光或其他杂散光，与被检测的光信号混合在一起，使它们<br>成为干扰和噪声的来源。为了使有用的光信号与它们区别开来，光信号应以某一频率变化。</li>
+<li>各种光电器件由于温度、暗发射或外加电场的作用，当无外界光信号作用时，在其工作回路中都会有暗电流产生，它是噪声源之一。若采用调制检测，则可消除探测器暗电流的影响。</li>
+<li>与直流放大器相比，交流放大器的稳定性高，零点漂移小，受电源电压波动、温度、老化的影响较小。如果与光信号的调制特性相匹配，采用选频放大或锁相放大等技术方案，就 可有效地抑制噪声，从而实现高精度的检测。</li>
+</ol>
+<p>所以需要进行光调制</p>
+<h5 id="4-1-1-振幅调制"><a href="#4-1-1-振幅调制" class="headerlink" title="4.1.1 振幅调制"></a>4.1.1 振幅调制</h5><p>振幅调制就是载波的振幅随调制信号的规律而变化的振荡，简称调幅。若调制信号是一<br>时间的余弦函数，即：</p>
+<script type="math/tex; mode=display">
+a(t)=A_m\cos(\omega_mt)</script><p>调幅波的表达式为：</p>
+<script type="math/tex; mode=display">
+E\left(t\right)=A_c[1+m_a\cos{\left(\omega_mt\right])}\cos(\omega_ct+\varphi_c)</script><p>调频波的频谱为：</p>
+<script type="math/tex; mode=display">
+E\left(t\right)=A_C\cos{\left(\omega_Ct+\varphi_c\right)}+\frac{m_a}{2}A_C\cos{\left[\left(\omega_C+\omega_m\right)t+\varphi_c\right]}+\frac{m_a}{2}A_C\cos[\left(\omega_C-\omega_m\right)+\varphi_C]</script><h5 id="4-1-2-频率调制和相位调制"><a href="#4-1-2-频率调制和相位调制" class="headerlink" title="4.1.2 频率调制和相位调制"></a>4.1.2 频率调制和相位调制</h5><p>调频或调相就是光载波的频率或相位随着调制信号的变化规律而改变的振荡．因为这两种调制波都表现为总相角$\phi(t)$的变化，因此统称为角度调制.</p>
+<h5 id="4-1-3-强度调制"><a href="#4-1-3-强度调制" class="headerlink" title="4.1.3 强度调制"></a>4.1.3 强度调制</h5><p>强度调制是指使光载波的强度（光强）随调制信号规律变化的激光振荡。光束调制多采用强度调制形式，这是因为接收器一般都是直接响应其所接收的光强。</p>
+<p>光束强度定义为光波电场的平方：</p>
+<script type="math/tex; mode=display">
+I(t)=E^{2}(t)=A_{\mathrm{c}}^{2} \cos ^{2}\left(\omega_{\mathrm{c}} t+\varphi_{\mathrm{c}}\right)</script><p>于是，强度调制的光强可表示为:</p>
+<script type="math/tex; mode=display">
+I(t)=\frac{A_{c}^{2}}{2}\left[1+k_{p} a(t)\right] \cos ^{2}\left(\omega_{c} t+\varphi_{c}\right)</script><p>仍设调制信号是单频余弦波，则</p>
+<script type="math/tex; mode=display">
+I(t)=\frac{A_{\mathrm{c}}^{2}}{2}\left[1+m_{\mathrm{p}} \cos \omega_{\mathrm{m}} t\right] \cos ^{2}\left(\omega_{\mathrm{c}} t+\varphi_{\mathrm{c}}\right)</script><h5 id="4-1-4-脉冲调制"><a href="#4-1-4-脉冲调制" class="headerlink" title="4.1.4 脉冲调制"></a>4.1.4 脉冲调制</h5><p>目前广泛采用一种不连续状态下进行调制的脉冲调制和数字式调制（脉冲编码调制）。它们一般是先进行电调制，再对光载波进行光强度调制。</p>
+<p>脉冲调制是用间歇的周期性脉冲序列作为载波，并使载波的某一参量按调制信号规律变化的调制方法。即先用模拟调制信号对一电脉冲序列的某参量（幅度、宽度、频 率、位置等）进行电调制，使之按调制信号规律变化，成为。已调电脉冲序列。然后再用这已调电脉冲 序列对光载波进行强度调制，就可以得到相应变化的光脉冲序列。</p>
+<h4 id="2-电光调制"><a href="#2-电光调制" class="headerlink" title="2.电光调制"></a>2.电光调制</h4><h5 id="4-2-1-电致折射率的变化"><a href="#4-2-1-电致折射率的变化" class="headerlink" title="4.2.1 电致折射率的变化"></a>4.2.1 电致折射率的变化</h5><p>当晶体施加电场后，其折射率椭球就发生“变形”，椭球方程变为</p>
+<script type="math/tex; mode=display">
+\left(\frac{1}{n^{2}}\right)_{1} x^{2}+\left(\frac{1}{n^{2}}\right)_{2} y^{2}+\left(\frac{1}{n^{2}}\right)_{3} z^{2}+2\left(\frac{1}{n^{2}}\right)_{4} y z+2\left(\frac{1}{n^{2}}\right)_{5} x z+2\left(\frac{1}{n^{2}}\right)_{6} x y=1</script><p>由于外电场，折射率椭球各系数随之发生线性变化，其变化量可定义为</p>
+<script type="math/tex; mode=display">
+\Delta\left(\frac{1}{n^{2}}\right)_{i}=\sum_{j=1}^{3} \gamma_{i j} E_{j}</script><h5 id="4-2-2-电光相位的延迟"><a href="#4-2-2-电光相位的延迟" class="headerlink" title="4.2.2 电光相位的延迟"></a>4.2.2 电光相位的延迟</h5><p>根据电光晶体电场方向和光束传播方向可以分为横向电光效应和纵向电光效应。</p>
+<p>纵向电光效应：两个光波穿过晶体后将产生一个相位</p>
+<script type="math/tex; mode=display">
+\Delta \varphi=\varphi_{y^{\prime}}-\varphi_{x^{\prime}}=\frac{2 \pi}{\lambda} L n_{\circ}^{3} \gamma_{63} E_{z}=\frac{2 \pi}{\lambda} n_{\circ}^{3} \gamma_{63} U</script><p>这个相位延迟完全由电光效应造成的双折射引起，所以称为电光相位延迟。当电光晶体和传播的光波长确定后，相位差的变化仅取决于外加电场，即只要改变电压，就能使相位成比例的变化。</p>
+<h4 id=""><a href="#" class="headerlink" title=" "></a> </h4></p></div><div class="share"><span>分享到</span>&nbsp;<span class="soc"><a href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank" class="fa fa-bookmark"></a></span><span class="soc"><a href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));" class="fa fa-weibo"></a></span><span class="soc"><a href="http://twitter.com/home?status=https://yocoh.cn/2020/06/19/光电子期末总结/%20饮夏的blog%20光电子期末总结" target="_blank" rel="noopener" class="fa fa-twitter"></a></span></div><div class="pagination"><p class="clearfix"><span class="pre pagbuttons"><a role="navigation" href="/2020/06/19/addcomments/" title="给未适配Valine的主题添加Valine评论功能"><i class="fa fa-angle-double-left"></i>&nbsp;上一篇: 给未适配Valine的主题添加Valine评论功能</a></span><span>&nbsp;</span><span class="next pagbuttons"><a role="navigation" href="/2020/06/18/markdown-note/" title="markdown笔记">下一篇: markdown笔记&nbsp;<i class="fa fa-angle-double-right"></i></a></span></p></div><section id="vcomments" class="comments"><style>.comments&quot;margin:30px;padding:10px;background:#fff&quot;@@media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}<key:post class="slug"></key:post><title:post class="title"></title:post></style><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script><script>new Valine({
+    el: "#vcomments",
+    app_id: 'cthP2xbPdeVXaQyQvfGVDqdU-gzGzoHsz',
+    app_key: '9GW2E4zuAXQ8CP22cb0CaEem',
+    path: window.location.pathname,
+    avatar: '' ,
+    placeholder:'与我交流世界~' ,
+    recordIP: true,
+})</script></section></div></div></div><div class="visible-xs site-bottom-footer"><footer><p>&copy;&nbsp;2020&nbsp;<a target="_blank" href="https://yocoh.cn" rel="noopener noreferrer">饮夏</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div></div><script src="/js/jquery-3.1.0.min.js"></script><script src="/js/bootstrap.min.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/google-analytics.js"></script><script src="/js/typography.js"></script></body></html>
