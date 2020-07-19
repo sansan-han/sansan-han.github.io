@@ -49,11 +49,11 @@
 <li><a href="#reply">现在回复可以收到邮件提醒了。</a></li>
 </ul>
 </blockquote>
-<p>可以点击<a href="%22https://blog.yocoh.cn/2020/06/19/addcomments/%22">这里</a> 看看前情提要，因为用的主题比较小众的原因，许多造轮子大佬都没眷顾到这里，所以一些简单的功能也还是得自己来做。就像网站右下角新加的<a href="%22aplayer.js.org%22">aplayer</a> 一样，不过谁让这个主题这么好看呢！</p>
+<p>可以点击<a href="https://blog.yocoh.cn/2020/06/19/addcomments/" target="_blank" rel="noopener">这里</a> 看看前情提要，因为用的主题比较小众的原因，许多造轮子大佬都没眷顾到这里，所以一些简单的功能也还是得自己来做。就像网站右下角新加的<a href="aplayer.js.org">aplayer</a> 一样，不过谁让这个主题这么好看呢！</p>
 <p>而且其实现在开源社区也使得技术下沉到大部分问题都可以百度解决。而且自己搞定一个需求的快乐也是玩博客的一部分。所以废话结束，笔记开始。</p>
 <h2 id="qq_img">识别QQ邮箱并拉取QQ头像</h2>
 <blockquote>
-<p>这部分功能参考了<a href="%22https://blog.csdn.net/cungudafa/article/details/104638730/%22">cungudafa</a>的文章。</p>
+<p>这部分功能参考了<a href="https://blog.csdn.net/cungudafa/article/details/104638730/" target="_blank" rel="noopener">cungudafa</a>的文章。</p>
 </blockquote>
 <p>主要用到的是这个接口：</p>
 <p><code>http://q1.qlogo.cn/g?b=qq&amp;nk=QQ号&amp;s=100</code></p>
@@ -68,7 +68,7 @@
 <pre class="highlight"><code class="javascript">script(src=<span class="hljs-string">"http://git.yocoh.cn/Valine.min.js"</span>)
 </code></pre>
 <h3 id="2修改过程"><a class="markdownIt-Anchor" href="#2修改过程"></a> 2.修改过程</h3>
-<p>之前的Valine是直接通过<code>jsdelivr</code>引用的，这次需要对js文件进行修改，所以先将<a href="%22https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js%22">Valine.min.js</a>下载到本地。</p>
+<p>之前的Valine是直接通过<code>jsdelivr</code>引用的，这次需要对js文件进行修改，所以先将<a href="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js" target="_blank" rel="noopener">Valine.min.js</a>下载到本地。</p>
 <p>然后打开文件，使用<kbd>Ctrl</kbd>+<kbd>F</kbd> 查找：</p>
 <pre class="highlight"><code class="">t.get(&quot;url&quot;)+&quot;&lt;/a&gt;&quot;;
 </code></pre>
@@ -98,11 +98,11 @@
 </ol>
 <h4 id="阿里云邮件推送"><a class="markdownIt-Anchor" href="#阿里云邮件推送"></a> <strong>阿里云邮件推送</strong></h4>
 <p>邮件服务看了很多，绕了一圈又回到了阿里云。毕竟免费实在是太香了。阿里云的配置也比较简单，官网流程引导很细致，直接跟着走应该就没问题了。</p>
-<p><a href="%22https://www.aliyun.com/product/directmail?spm=5176.224200.h2v3icoap.439.3f486ed641lXP9%22">阿里云邮件服务</a></p>
+<p><a href="https://www.aliyun.com/product/directmail?spm=5176.224200.h2v3icoap.439.3f486ed641lXP9" target="_blank" rel="noopener">阿里云邮件服务</a></p>
 <p>如果遇到问题也可以在下方给我留言。</p>
 <p>&gt;!既然都已经安装了hexo，安装了主题，安装了valine走到这里了，应该也不可能会有问题吧。&gt;!</p>
 <h4 id="valine-admin配置"><a class="markdownIt-Anchor" href="#valine-admin配置"></a> <strong>Valine-admin配置</strong></h4>
-<p><a href="%22https://github.com/zhaojun1998/Valine-Admin%22">Valine-admin</a>是<a href="%22https://github.com/zhaojun1998%22">zhaojun</a>大神为Valine写的一个拓展应用，专门用于增强邮件通知。</p>
+<p><a href="https://github.com/zhaojun1998/Valine-Admin" target="_blank" rel="noopener">Valine-admin</a>是<a href="https://github.com/zhaojun1998" target="_blank" rel="noopener">zhaojun</a>大神为Valine写的一个拓展应用，专门用于增强邮件通知。</p>
 <h5 id="快速配置"><a class="markdownIt-Anchor" href="#快速配置"></a> <strong>快速配置</strong></h5>
 <p>首先最重要的是Valine已经可以正常使用了，然后进入 <a href="https://leancloud.cn/dashboard/applist.html#/apps" target="_blank" rel="noopener">Leancloud</a>对应的应用中。</p>
 <p>点击<code>云引擎 -&gt; 部署</code>，填写代码库<code>https://github.com/zhaojun1998/Valine-Admin</code></p>
@@ -154,9 +154,9 @@
 <p><img src="http://img.yocoh.cn/images/2020/07/19/image49fc641f8913848c.png" alt="image49fc641f8913848c.png" /></p>
 <p>最后，使用<code>resend-mails</code>函数，<code>Cron</code>写为<code>0 59 7 * * *</code>，表示每天早上检查漏发的通知邮件并补发。这样子的话就可以最大限度地保证不会出现漏发的情况了。当然，为了稳定最好还是升级至标准版。</p>
 <h4 id="写在最后"><a class="markdownIt-Anchor" href="#写在最后"></a> <strong>写在最后</strong></h4>
-<p>如果需要微信或QQ进行通知，请参阅：<a href="%22https://www.cnblogs.com/antmoe/p/12904118.html%22">antmoe的文章</a></p>
-<p>如果需要阅读Valine官方文档，请参阅：<a href="%22https://valine.js.org/%22">Valine</a></p>
-<p>如果需要阅读Valine-admin的文档，请参阅：<a href="%22https://github.com/zhaojun1998/Valine-Admin%22">Valine-admin</a></p>
+<p>如果需要微信或QQ进行通知，请参阅：<a href="https://www.cnblogs.com/antmoe/p/12904118.html" target="_blank" rel="noopener">antmoe的文章</a></p>
+<p>如果需要阅读Valine官方文档，请参阅：<a href="https://valine.js.org/" target="_blank" rel="noopener">Valine</a></p>
+<p>如果需要阅读Valine-admin的文档，请参阅：<a href="https://github.com/zhaojun1998/Valine-Admin" target="_blank" rel="noopener">Valine-admin</a></p>
 <p>如果想要体验评论或者有其他问题，请随时在下方评论骚扰。</p>
 <p>peace yo~</p>
 </p></div><div class="share"><span>分享到</span>&nbsp;<span class="soc"><a href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank" class="fa fa-bookmark"></a></span><span class="soc"><a href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));" class="fa fa-weibo"></a></span><span class="soc"><a href="http://twitter.com/home?status=https://yocoh.cn/2020/07/19/评论系统的又一次折腾/%20饮夏的blog%20评论系统的又一次折腾" target="_blank" rel="noopener" class="fa fa-twitter"></a></span></div><div class="pagination"><p class="clearfix"><span>&nbsp;</span><span class="next pagbuttons"><a role="navigation" href="/2020/07/02/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E6%9C%9F%E6%9C%AB%E6%B1%87%E6%8A%A5/" title="量子力学期末汇报">下一篇: 量子力学期末汇报&nbsp;<i class="fa fa-angle-double-right"></i></a></span></p></div><section id="vcomments" class="comments"><style>.comments&quot;margin:30px;padding:10px;background:#fff&quot;@@media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}<key:post class="slug"></key:post><title:post class="title"></title:post></style><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="http://git.yocoh.cn/Valine.min.js"></script><script>new Valine({
