@@ -155,33 +155,6 @@
   </entry>
   
   <entry>
-    <title>不用命令行给自己搭一个图床吧</title>
-    <link href="https://yocoh.cn/2020/06/19/setimgserver/"/>
-    <id>https://yocoh.cn/2020/06/19/setimgserver/</id>
-    <published>2020-06-19T13:47:01.000Z</published>
-    <updated>2020-06-19T14:21:51.375Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;http://img.yocoh.cn/images/2020/06/19/-3.jpg&quot; alt=&quot;-3.jpg&quot; /&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;我使用的是&lt;a href=&quot;https://chevereto.com/&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="blog" scheme="https://yocoh.cn/tags/blog/"/>
-    
-  </entry>
-  
-  <entry>
     <title>给未适配Valine的主题添加Valine评论功能</title>
     <link href="https://yocoh.cn/2020/06/19/addcomments/"/>
     <id>https://yocoh.cn/2020/06/19/addcomments/</id>
