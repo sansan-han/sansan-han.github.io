@@ -14,7 +14,7 @@
     height: 30px;
   }
 .aplayer .aplayer-lrc p.aplayer-lrc-current{
-    color: #eee
+    color: #58B2DC
 }
 .aplayer.aplayer-narrow .aplayer-body{
     left: -66px !important;
@@ -28,7 +28,7 @@
 }
 .aplayer.aplayer-fixed .lrc-show {
     display: block;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(88, 178,220, 0.8);
 }
 </style>
 <meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/css/prism.css" type="text/css">
@@ -132,4 +132,47 @@
             autoplay="false"
             mutex="true"
             order="random">
-    </meting-js></div></div><script src="/js/jquery-3.1.0.min.js"></script><script src="/js/bootstrap.min.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/google-analytics.js"></script><script src="/js/typography.js"></script><script src="https://git.yocoh.cn/img_full.js"></script></body></html>
+    </meting-js><script>
+    function switchNightMode(){
+        let night = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") || '0';
+        if(night == '0'){
+            document.body.classList.add('night');
+            document.cookie = "night=1;path=/;SameSite=Strict"
+            console.log('夜间模式被手动开启啦');
+            document.getElementById("switch1").checked=true;
+        }else{
+            document.body.classList.remove('night');
+            document.cookie = "night=0;path=/;SameSite=Strict"
+            console.log('夜间模式被手动关闭啦');
+            document.getElementById("switch1").checked=false;
+        }
+    }
+
+        let box=document.getElementById("switch1");
+        let night = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") || '0';
+        if(document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") === ''){
+            if(new Date().getHours() >=22 || new Date().getHours() <= 6){
+                document.body.classList.add('night');
+                document.cookie = "night=1;path=/;SameSite=Strict";
+                console.log('夜间模式已开启，夜深啦，早点休息');
+                box.checked=true;
+            }else{
+                document.body.classList.remove('night');
+                document.cookie = "night=0;path=/;SameSite=Strict";
+                console.log('夜间模式已关闭');
+                box.checked=false;
+            }
+        }else {
+            let judge = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") || '0';
+            if (judge == '0') {
+                document.body.classList.remove('night');
+                console.log('cookie_Night_Mode:OFF');
+                box.checked=false;
+            } else if (judge == '1') {
+                document.body.classList.add('night');
+                console.log('cookie_Night_Mode:ON');
+                box.checked=true;
+                console.log(box.checked);
+            }
+        }
+</script></div></div><script src="/js/jquery-3.1.0.min.js"></script><script src="/js/bootstrap.min.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/google-analytics.js"></script><script src="/js/typography.js"></script><script src="https://git.yocoh.cn/img_full.js"></script></body></html>
