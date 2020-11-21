@@ -1,6 +1,7 @@
 ---
 title: markdown笔记
 date: 2020-06-18 19:06:36
+desc: md的学习笔记
 tags:
 categories:
     - docs
@@ -92,7 +93,7 @@ categories:
 <u>带下划线文本</u>
 
 
-    
+​    
 # 三、引用
 
 在要引用的文字前加>即可。引用可嵌套
@@ -109,6 +110,7 @@ categories:
 
 >这是引用的内容
 >>这是引用的内容
+>>
 >>>这是引用的内容
 
 
@@ -261,7 +263,7 @@ title可加可不加
 这是代码块
 ```
 
-    
+
 # 十、其他：
 ### 段落：
 
@@ -326,6 +328,68 @@ w_0\ =\sqrt{\frac{\lambda}{\pi}}\ \frac{\left[L\left(R_1-L\right)\left(R_2-L\rig
 $$
 ```
 
+$$
+w_0\ =\sqrt{\frac{\lambda}{\pi}}\ \frac{\left[L\left(R_1-L\right)\left(R_2-L\right)\left(R_1+R_2-L\right)\right]^\frac{1}{4}}{\left(R_1+R_2-2L\right)^{1/2}}
+$$
+
+### Spoiler
+
+自定义了一个标签`<sp>`来实现扰流板功能，调用方式：
+
+```
+<sp>spoiler</sp>
+```
+
+效果如下：
+
+<sp>spoiler</sp>
 
 
+
+### 正文插入音乐
+
+使用[hexo-tag-aplayer](https://github.com/MoePlayer/hexo-tag-aplayer) 来插入音乐
+
+
+
+```
+<!-- 简单示例 (id, server, type)  -->
+{ meting "26201898" "netease" "song" %}
+前后都应有百分号，懒得写注释规则，前面的删掉了。
+<!-- 进阶示例 -->
+{ meting "363276397" "netease" "playlist"  "mutex:false" "listmaxheight:340px" "preload:none" "theme:#ad7a86"%}
+```
+
+> 简单示例效果如下：
+
+{% meting "26201898" "netease" "song" %}
+
+
+
+> 进阶示例效果如下：
+
+{% meting "363276397" "netease" "playlist"  "mutex:false" "listmaxheight:340px" "preload:none" "theme:#ad7a86"%}
+
+
+
+以下是有关`{meting %}`的选项列表：
+
+| 选项          | 默认值     | 描述                                                        |
+| ------------- | ---------- | ----------------------------------------------------------- |
+| id            | **必须值** | 歌曲 id / 播放列表 id / 相册 id / 搜索关键字                |
+| server        | **必须值** | 音乐平台: `netease`, `tencent`, `kugou`, `xiami`, `baidu`   |
+| type          | **必须值** | `song`, `playlist`, `album`, `search`, `artist`             |
+| fixed         | `false`    | 开启固定模式                                                |
+| mini          | `false`    | 开启迷你模式                                                |
+| loop          | `all`      | 列表循环模式：`all`, `one`,`none`                           |
+| order         | `list`     | 列表播放模式： `list`, `random`                             |
+| volume        | 0.7        | 播放器音量                                                  |
+| lrctype       | 0          | 歌词格式类型                                                |
+| listfolded    | `false`    | 指定音乐播放列表是否折叠                                    |
+| storagename   | `metingjs` | LocalStorage 中存储播放器设定的键名                         |
+| autoplay      | `true`     | 自动播放，移动端浏览器暂时不支持此功能                      |
+| mutex         | `true`     | 该选项开启时，如果同页面有其他 aplayer 播放，该播放器会暂停 |
+| listmaxheight | `340px`    | 播放列表的最大长度                                          |
+| preload       | `auto`     | 音乐文件预载入模式，可选项： `none`, `metadata`, `auto`     |
+| theme         | `#ad7a86`  | 播放器风格色彩设置                                          |
 

@@ -1,7 +1,9 @@
 ---
 title: 不用命令行给自己搭一个图床吧
 date: 2020-06-19 21:47:01
-tags: blog
+desc: 利用宝塔搭建Chevereto图床
+tags:
+- blog插件
 ---
 
 
@@ -38,7 +40,7 @@ tags: blog
 
 在最后的`}` 前面加入以下代码：  
 
-```javascript
+```
 # Disable access to .ht* files
 location ~ /\.ht {
 	deny all;

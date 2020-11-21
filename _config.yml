@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://yocoh.cn
+url: https://blog.yocoh.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -121,10 +121,6 @@ feed:
   type: atom
   path: atom.xml
   limit: 20
-  hub:
-  content:
-  content_limit: 140
-  content_limit_delim: ' '
 
 # For syntax highlighting
 prism_plugin:
@@ -138,3 +134,29 @@ deploy:
   type: 'git'
   repo: git@github.com:sansan-han/sansan-han.github.io.git
   branch: master
+
+
+
+#mathjax
+mathjax:
+    enable: true
+
+markdown_it_plus:
+  highlight: true
+  html: true
+  xhtmlOut: true
+  breaks: true
+  langPrefix:
+  linkify: true
+  typographer:
+  quotes: “”‘’
+  plugins:
+    - plugin:
+        name: markdown-it-katex
+        enable: true
+    - plugin:
+        name: markdown-it-mark
+        enable: false
+aplayer:
+  enable: true
+  meting: true
