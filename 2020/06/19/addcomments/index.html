@@ -32,24 +32,26 @@
 }
 </style>
 <meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/css/prism.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body class="night"><div id="stage" class="container"><div class="row"><div id="side-bar" class="col-sm-3 col-xs-12 side-container invisible"><div class="vertical-text site-title"><h3 tabindex="-1" class="site-title-small"><a href="/" class="a-title">与世界分享世界</a></h3><h1 tabindex="-1" class="site-title-large"><a href="/" class="a-title">饮夏</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div id="site-nav" class="site-title-links"><ul><li><a href="/">首页</a></li><li><a href="/archives">归档</a></li><li><a href="/categories">分类</a></li><li><a href="/tags">标签</a></li><li><a href="/about/index.html">关于</a></li><li><a href="/note/test.html">test</a></li><li class="soc"><a href="https://github.com/sansan-han" target="_blank" rel="noopener noreferrer"><i class="fa fa-github">&nbsp;</i></a><a href="http://weibo.com/u/5943175365" target="_blank" rel="noopener noreferrer"><i class="fa fa-weibo">&nbsp;</i></a><a href="https://blog.yocoh.cn/atom.xml" target="_blank" rel="noopener noreferrer"><i class="fa fa-rss">&nbsp;</i></a></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2021&nbsp;<a target="_blank" href="https://yocoh.cn" rel="noopener noreferrer">饮夏</a></p><!--input.switch#switch1(type="checkbox" onclick="switchNightMode()")--><p class = "night_switch" onclick="switchNightMode()" ><script src="https://yocoh.cn/api.php"></script></p>
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body class="night"><div id="stage" class="container"><div class="row"><div id="side-bar" class="col-sm-3 col-xs-12 side-container invisible"><div class="vertical-text site-title"><h3 tabindex="-1" class="site-title-small"><a href="/" class="a-title">与世界分享世界</a></h3><h1 tabindex="-1" class="site-title-large"><a href="/" class="a-title">饮夏</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div id="site-nav" class="site-title-links"><ul><li><a href="/">首页</a></li><li><a href="/archives">归档</a></li><li><a href="/categories">分类</a></li><li><a href="/tags">标签</a></li><li><a href="/about/index.html">关于</a></li><li class="soc"><a href="https://github.com/sansan-han" target="_blank" rel="noopener noreferrer"><i class="fa fa-github">&nbsp;</i></a><a href="http://weibo.com/u/5943175365" target="_blank" rel="noopener noreferrer"><i class="fa fa-weibo">&nbsp;</i></a><a href="https://blog.yocoh.cn/atom.xml" target="_blank" rel="noopener noreferrer"><i class="fa fa-rss">&nbsp;</i></a></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2021&nbsp;<a target="_blank" href="https://yocoh.cn" rel="noopener noreferrer">饮夏</a></p><!--input.switch#switch1(type="checkbox" onclick="switchNightMode()")--><p class = "night_switch" onclick="switchNightMode()" ><script src="https://yocoh.cn/api.php"></script></p>
 <style>
 .night_switch{
 user-select:none;
 }
 </style>
-</footer></div></div></div><div id="main-container" class="col-sm-9 col-xs-12 main-container invisible"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post-container"><p class="post-title"><a>给未适配Valine的主题添加Valine评论功能</a></p><p class="post-meta"><span class="date meta-item">发布于&nbsp;2020-06-19</span><span class="meta-item"><i class="fa fa-folder"></i><span>&nbsp;</span><a href="/categories/blog/" title="blog" class="a-tag">blog</a><span>&nbsp;</span></span><span class="meta-item"><i class="fa fa-tag"></i><span>&nbsp;</span><a href="/tags/blog插件/" title="blog插件" class="a-tag">blog插件</a><span>&nbsp;</span></span></p><p class="post-abstract"><p><img src="http://file.yocoh.cn/images/2020/07/09/v2-cc1e57e54d4e657042e6d5c310cbf41f_r.jpg" alt="v2-cc1e57e54d4e657042e6d5c310cbf41f_r.jpg"></p>
+</footer></div></div></div><div id="main-container" class="col-sm-9 col-xs-12 main-container invisible"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post-container"><p class="post-title"><a>给未适配Valine的主题添加Valine评论功能</a></p><p class="post-meta"><span class="date meta-item">发布于&nbsp;2020-06-19</span><span class="meta-item"><i class="fa fa-folder"></i><span>&nbsp;</span><a href="/categories/blog/" title="blog" class="a-tag">blog</a><span>&nbsp;</span></span><span class="meta-item"><i class="fa fa-tag"></i><span>&nbsp;</span><a href="/tags/blog插件/" title="blog插件" class="a-tag">blog插件</a><span>&nbsp;</span></span></p><p class="post-abstract"><p><img src="http://file.yocoh.cn/images/2020/07/09/v2-cc1e57e54d4e657042e6d5c310cbf41f_r.jpg" alt="v2-cc1e57e54d4e657042e6d5c310cbf41f_r.jpg" /></p>
 <blockquote>
 <p>其实原先主题自带了两种评论方式为博客设置评论服务：<a href="https://disqus.com/" target="_blank" rel="noopener">Disqus</a> 与<a href="https://livere.com/" target="_blank" rel="noopener">LiveRe</a> 。</p>
-<p>但是由于两个提供商都处于海外，访问速度较慢，<del>而且太丑</del>。于是选择<a href="https://valine.js.org/" target="_blank" rel="noopener">Valine</a> 作为本博客的评论工具。  </p>
+<p>但是由于两个提供商都处于海外，访问速度较慢，<s>而且太丑</s>。于是选择<a href="https://valine.js.org/" target="_blank" rel="noopener">Valine</a> 作为本博客的评论工具。</p>
 </blockquote>
 <p>此篇记录在添加Valine的过程中遇到的问题，方便以后查阅。</p>
-<h1 id="Valine"><a href="#Valine" class="headerlink" title="Valine"></a>Valine</h1><h2 id="获取APP-ID和APP-Key"><a href="#获取APP-ID和APP-Key" class="headerlink" title="获取APP ID和APP Key"></a>获取APP ID和APP Key</h2><p>这部分官网<a href="https://valine.js.org/quickstart.html" target="_blank" rel="noopener">说明文档</a> 说明很细致，直接跟着做就ok。</p>
-<p><img src="http://file.yocoh.cn/images/2020/06/19/valine.png" alt="官网说明文档">:</p>
-<p>之后将获取到的<code>app_id</code>与<code>app_key</code>填入HTML中:  </p>
-<pre><code>&lt;head&gt;
+<h1 id="valine"><a class="markdownIt-Anchor" href="#valine"></a> Valine</h1>
+<h2 id="获取app-id和app-key"><a class="markdownIt-Anchor" href="#获取app-id和app-key"></a> 获取APP ID和APP Key</h2>
+<p>这部分官网<a href="https://valine.js.org/quickstart.html" target="_blank" rel="noopener">说明文档</a> 说明很细致，直接跟着做就ok。</p>
+<p><img src="http://file.yocoh.cn/images/2020/06/19/valine.png" alt="官网说明文档" />:</p>
+<p>之后将获取到的<code>app_id</code>与<code>app_key</code>填入HTML中:</p>
+<pre class="highlight"><code class="">&lt;head&gt;
     ..
-    &lt;script src=&#39;//unpkg.com/valine/dist/Valine.min.js&#39;&gt;&lt;/script&gt;
+    &lt;script src='//unpkg.com/valine/dist/Valine.min.js'&gt;&lt;/script&gt;
     ...
 &lt;/head&gt;
 &lt;body&gt;
@@ -57,28 +59,30 @@ user-select:none;
     &lt;div id=&quot;vcomments&quot;&gt;&lt;/div&gt;
     &lt;script&gt;
         new Valine({
-            el: &#39;#vcomments&#39;,
-            appId: &#39;Your appId&#39;,
-            appKey: &#39;Your appKey&#39;
+            el: '#vcomments',
+            appId: 'Your appId',
+            appKey: 'Your appKey'
         })
     &lt;/script&gt;
 &lt;/body&gt;
-</code></pre><p>这样子网页中就出现了评论。但是真正使用中基本不会用到这种添加方式，不可能一个一个页面的添加评论栏。</p>
-<h2 id="在hexo中配置Valine"><a href="#在hexo中配置Valine" class="headerlink" title="在hexo中配置Valine"></a>在hexo中配置Valine</h2><p>许多hexo主题原生适配了Valine，<a href="https://valine.js.org/hexo.html" target="_blank" rel="noopener">Valine</a> 官网里也给出了部分主题的下载方式，如果你使用的主题恰好在其中，就可以通过修改<code>theme</code>文件夹下的<code>_config.yml</code>，填入上面获取的<code>app_id</code>与<code>app_key</code>简单两步添加<code>Valine</code>。  </p>
-<p>我使用的是<a href="https://www.keep.moe/" target="_blank" rel="noopener">Makito</a> 制作的<a href="https://github.com/SumiMakito/hexo-theme-typography" target="_blank" rel="noopener">Typography</a> ,恰巧原生不支持<code>Valine</code>。  </p>
-<p>起初打算将其他主题的配置文件直接copy进现在这个主题的配置文件里，但是仔细观察之后发现并不行。因为其他的主题大多是基于<code>ejs</code>编写，而当前主题是基于<code>jade</code>的。所以只能自己添加，但是仔细看了看文档发现也并不是很复杂。<del>不过Valine的文档写得差是真的，和我有得一比</del>  </p>
-<p>在末尾加上下面代码:  </p>
-<pre class="line-numbers language-lang-$jade"><code class="language-lang-$jade">if theme.valine
-    if theme.valine.appid&&theme.valine.appkey
-        section(id="vcomments",class="comments")
-            style='.comments"margin:30px;padding:10px;background:#fff"@@media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}'
+</code></pre>
+<p>这样子网页中就出现了评论。但是真正使用中基本不会用到这种添加方式，不可能一个一个页面的添加评论栏。</p>
+<h2 id="在hexo中配置valine"><a class="markdownIt-Anchor" href="#在hexo中配置valine"></a> 在hexo中配置Valine</h2>
+<p>许多hexo主题原生适配了Valine，<a href="https://valine.js.org/hexo.html" target="_blank" rel="noopener">Valine</a> 官网里也给出了部分主题的下载方式，如果你使用的主题恰好在其中，就可以通过修改<code>theme</code>文件夹下的<code>_config.yml</code>，填入上面获取的<code>app_id</code>与<code>app_key</code>简单两步添加<code>Valine</code>。</p>
+<p>我使用的是<a href="https://www.keep.moe/" target="_blank" rel="noopener">Makito</a> 制作的<a href="https://github.com/SumiMakito/hexo-theme-typography" target="_blank" rel="noopener">Typography</a> ,恰巧原生不支持<code>Valine</code>。</p>
+<p>起初打算将其他主题的配置文件直接copy进现在这个主题的配置文件里，但是仔细观察之后发现并不行。因为其他的主题大多是基于<code>ejs</code>编写，而当前主题是基于<code>jade</code>的。所以只能自己添加，但是仔细看了看文档发现也并不是很复杂。<s>不过Valine的文档写得差是真的，和我有得一比</s></p>
+<p>在末尾加上下面代码:</p>
+<pre class="highlight"><code class="$jade">if theme.valine
+    if theme.valine.appid&amp;&amp;theme.valine.appkey
+        section(id=&quot;vcomments&quot;,class=&quot;comments&quot;)
+            style='.comments&quot;margin:30px;padding:10px;background:#fff&quot;@@media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}'
                     key:post.slug
                     title:post.title
-            script(src="//cdn1.lncld.net/static/js/3.0.4/av-min.js")
-            script(src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js")
+            script(src=&quot;//cdn1.lncld.net/static/js/3.0.4/av-min.js&quot;)
+            script(src=&quot;https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js&quot;)
             script.
                 new Valine({
-                    el: "#vcomments",
+                    el: &quot;#vcomments&quot;,
                     app_id: '#{theme.valine.appid}',
                     app_key: '#{theme.valine.appkey}',
                     path: window.location.pathname,
@@ -86,25 +90,28 @@ user-select:none;
                     placeholder:'#{theme.valine.placeholder}' ,
                     recordIP: true,
                 })
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>顺便吐槽，<code>jade</code>这种格式太反html直觉了。  </p>
-<p>接着修改<code>theme</code>文件的<code>_config.yml</code>,一样在喜欢的位置加上以下代码：  </p>
-<pre><code>valine:
-  appid: &#39;此处填入刚刚get的appid&#39;
-  appkey: &#39;此处填入刚刚get的appkey&#39;
+
+</code></pre>
+<p>顺便吐槽，<code>jade</code>这种格式太反html直觉了。</p>
+<p>接着修改<code>theme</code>文件的<code>_config.yml</code>,一样在喜欢的位置加上以下代码：</p>
+<pre class="highlight"><code class="">valine:
+  appid: '此处填入刚刚get的appid'
+  appkey: '此处填入刚刚get的appkey'
   verfify: false #验证码
   notify: false #评论回复提醒
   avatar: robohash #头像默认格式
   placeholder: 与我交流世界~ #评论框预留文字
-</code></pre><p>更多配置可以查阅<a href="https://valine.js.org/configuration.html" target="_blank" rel="noopener">Valine配置项</a>  </p>
+
+</code></pre>
+<p>更多配置可以查阅<a href="https://valine.js.org/configuration.html" target="_blank" rel="noopener">Valine配置项</a></p>
 <p>至此评论功能就已经基本完成了。最后需要在<a href="https://leancloud.cn/" target="_blank" rel="noopener">leancloud</a> ，也就是刚刚获取<code>app id</code>的网站上将你的域名添加入安全组。</p>
-<p><img src="http://file.yocoh.cn/images/2020/06/19/QQ20200619175210.png" alt="将域名添加入安全组"></p>
+<p><img src="http://file.yocoh.cn/images/2020/06/19/QQ20200619175210.png" alt="将域名添加入安全组" /></p>
 <p>此外如果想要删除评论也在这个网站上操作。</p>
-<p>接下来  </p>
-<pre class="line-numbers language-lang-$xslt"><code class="language-lang-$xslt">hexo g
+<p>接下来</p>
+<pre class="highlight"><code class="$xslt">hexo g
 hexo s
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>试试吧。  </p>
+</code></pre>
+<p>试试吧。</p>
 <p>peace yo~</p>
 </p></div><div class="share"><span>分享到</span>&nbsp;<span class="soc"><a href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank" class="fa fa-bookmark"></a></span><span class="soc"><a href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));" class="fa fa-weibo"></a></span><span class="soc"><a href="http://twitter.com/home?status=https://blog.yocoh.cn/2020/06/19/addcomments/%20饮夏的blog%20给未适配Valine的主题添加Valine评论功能" target="_blank" rel="noopener" class="fa fa-twitter"></a></span></div><div class="pagination"><p class="clearfix"><span class="pre pagbuttons"><a role="navigation" href="/2020/06/19/setimgserver/" title="不用命令行给自己搭一个图床吧"><i class="fa fa-angle-double-left"></i>&nbsp;上一篇: 不用命令行给自己搭一个图床吧</a></span><span>&nbsp;</span><span class="next pagbuttons"><a role="navigation" href="/2020/06/18/markdown-note/" title="markdown笔记">下一篇: markdown笔记&nbsp;<i class="fa fa-angle-double-right"></i></a></span></p></div><section id="vcomments" class="comments"><style>.comments&quot;margin:30px;padding:10px;background:#fff&quot;@@media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}<key:post class="slug"></key:post><title:post class="title"></title:post></style><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script><script>new Valine({
     el: "#vcomments",

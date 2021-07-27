@@ -40,121 +40,121 @@
 }
 </style>
 <meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/css/prism.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body class="night"><div id="stage" class="container"><div class="row"><div id="side-bar" class="col-sm-3 col-xs-12 side-container invisible"><div class="vertical-text site-title"><h3 tabindex="-1" class="site-title-small"><a href="/" class="a-title">与世界分享世界</a></h3><h1 tabindex="-1" class="site-title-large"><a href="/" class="a-title">饮夏</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div id="site-nav" class="site-title-links"><ul><li><a href="/">首页</a></li><li><a href="/archives">归档</a></li><li><a href="/categories">分类</a></li><li><a href="/tags">标签</a></li><li><a href="/about/index.html">关于</a></li><li><a href="/note/test.html">test</a></li><li class="soc"><a href="https://github.com/sansan-han" target="_blank" rel="noopener noreferrer"><i class="fa fa-github">&nbsp;</i></a><a href="http://weibo.com/u/5943175365" target="_blank" rel="noopener noreferrer"><i class="fa fa-weibo">&nbsp;</i></a><a href="https://blog.yocoh.cn/atom.xml" target="_blank" rel="noopener noreferrer"><i class="fa fa-rss">&nbsp;</i></a></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2021&nbsp;<a target="_blank" href="https://yocoh.cn" rel="noopener noreferrer">饮夏</a></p><!--input.switch#switch1(type="checkbox" onclick="switchNightMode()")--><p class = "night_switch" onclick="switchNightMode()" ><script src="https://yocoh.cn/api.php"></script></p>
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body class="night"><div id="stage" class="container"><div class="row"><div id="side-bar" class="col-sm-3 col-xs-12 side-container invisible"><div class="vertical-text site-title"><h3 tabindex="-1" class="site-title-small"><a href="/" class="a-title">与世界分享世界</a></h3><h1 tabindex="-1" class="site-title-large"><a href="/" class="a-title">饮夏</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div id="site-nav" class="site-title-links"><ul><li><a href="/">首页</a></li><li><a href="/archives">归档</a></li><li><a href="/categories">分类</a></li><li><a href="/tags">标签</a></li><li><a href="/about/index.html">关于</a></li><li class="soc"><a href="https://github.com/sansan-han" target="_blank" rel="noopener noreferrer"><i class="fa fa-github">&nbsp;</i></a><a href="http://weibo.com/u/5943175365" target="_blank" rel="noopener noreferrer"><i class="fa fa-weibo">&nbsp;</i></a><a href="https://blog.yocoh.cn/atom.xml" target="_blank" rel="noopener noreferrer"><i class="fa fa-rss">&nbsp;</i></a></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2021&nbsp;<a target="_blank" href="https://yocoh.cn" rel="noopener noreferrer">饮夏</a></p><!--input.switch#switch1(type="checkbox" onclick="switchNightMode()")--><p class = "night_switch" onclick="switchNightMode()" ><script src="https://yocoh.cn/api.php"></script></p>
 <style>
 .night_switch{
 user-select:none;
 }
 </style>
-</footer></div></div></div><div id="main-container" class="col-sm-9 col-xs-12 main-container invisible"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post-container"><p class="post-title"><a>给博客加个夜间模式吧</a></p><p class="post-meta"><span class="date meta-item">发布于&nbsp;2020-10-26</span><span class="meta-item"><i class="fa fa-folder"></i><span>&nbsp;</span><a href="/categories/blog/" title="blog" class="a-tag">blog</a><span>&nbsp;</span></span><span class="meta-item"><i class="fa fa-tag"></i><span>&nbsp;</span><a href="/tags/blog插件/" title="blog插件" class="a-tag">blog插件</a><span>&nbsp;</span></span></p><p class="post-abstract"><p><del>白天都无人问津的破网站，真的还有人晚上来吗?</del></p>
+</footer></div></div></div><div id="main-container" class="col-sm-9 col-xs-12 main-container invisible"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post-container"><p class="post-title"><a>给博客加个夜间模式吧</a></p><p class="post-meta"><span class="date meta-item">发布于&nbsp;2020-10-26</span><span class="meta-item"><i class="fa fa-folder"></i><span>&nbsp;</span><a href="/categories/blog/" title="blog" class="a-tag">blog</a><span>&nbsp;</span></span><span class="meta-item"><i class="fa fa-tag"></i><span>&nbsp;</span><a href="/tags/blog插件/" title="blog插件" class="a-tag">blog插件</a><span>&nbsp;</span></span></p><p class="post-abstract"><p><s>白天都无人问津的破网站，真的还有人晚上来吗?</s></p>
 <ul>
 <li><strong>点击按钮切换模式</strong></li>
 </ul>
 <p>其实实现原理很简单:</p>
 <p>点击<code>checkbox</code>的时候，为body新增（或移除）名为<code>night</code>的class，</p>
 <p>然后在<code>css</code>的<code>night.class</code>里加入夜间模式的代码。</p>
-<pre class="line-numbers language-lang-javascript"><code class="language-lang-javascript">//利用classList.add函数给body新增一个class
-//js部分
+<pre class="highlight"><code class="javascript"><span class="hljs-comment">//利用classList.add函数给body新增一个class</span>
+<span class="hljs-comment">//js部分</span>
 ...
 function {
-        checkbox=document.getElementById("checkbox")
-        if(!checkbox.checked){
-            document.body.classList.add('night');
-            console.log('夜间模式开启啦');
-            checkbox.checked=true;
-        }else{
-            document.body.classList.remove('night');
-            console.log('夜间模式关闭啦');
-            checkbox.checked.checked=false;
+		checkbox=<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"checkbox"</span>)
+        <span class="hljs-keyword">if</span>(!checkbox.checked){
+            <span class="hljs-built_in">document</span>.body.classList.add(<span class="hljs-string">'night'</span>);
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'夜间模式开启啦'</span>);
+            checkbox.checked=<span class="hljs-literal">true</span>;
+        }<span class="hljs-keyword">else</span>{
+            <span class="hljs-built_in">document</span>.body.classList.remove(<span class="hljs-string">'night'</span>);
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'夜间模式关闭啦'</span>);
+            checkbox.checked.checked=<span class="hljs-literal">false</span>;
         }
     }
  ...
- //css部分
+ <span class="hljs-comment">//css部分</span>
  ...
  body.night{
-  background: rgba(3,3,3,0.7) no-repeat fixed center;
-  color: $night_color;//更改颜色
+  <span class="hljs-attr">background</span>: rgba(<span class="hljs-number">3</span>,<span class="hljs-number">3</span>,<span class="hljs-number">3</span>,<span class="hljs-number">0.7</span>) no-repeat fixed center;
+  color: $night_color;<span class="hljs-comment">//更改颜色</span>
 }
 ...
-//为了切换更平滑，在body中加入transition
+<span class="hljs-comment">//为了切换更平滑，在body中加入transition</span>
 ...
 body{
-  background: rgba(233, 233, 233, 0.9) no-repeat fixed center;
+  <span class="hljs-attr">background</span>: rgba(<span class="hljs-number">233</span>, <span class="hljs-number">233</span>, <span class="hljs-number">233</span>, <span class="hljs-number">0.9</span>) no-repeat fixed center;
   background-size: cover;
-  transition: background-color 0.6s;
+  transition: background-color <span class="hljs-number">0.6</span>s;
   color:$day_color
 }
  ...
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</code></pre>
 <ul>
 <li><strong>根据时间自动切换</strong></li>
 </ul>
 <p>加入一个简单的判定，让夜间模式自动切换。</p>
-<pre class="line-numbers language-lang-javascript"><code class="language-lang-javascript">if(new Date().getHours() >=22 || new Date().getHours() <= 6){
-                document.body.classList.add('night');
-                console.log('夜间模式已开启，夜深啦，早点休息');
-                box.checked=true;
-            }else{
-                document.body.classList.remove('night');
-                console.log('夜间模式已关闭');
-                box.checked=false;
+<pre class="highlight"><code class="javascript"><span class="hljs-keyword">if</span>(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>().getHours() &gt;=<span class="hljs-number">22</span> || <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>().getHours() &lt;= <span class="hljs-number">6</span>){
+                <span class="hljs-built_in">document</span>.body.classList.add(<span class="hljs-string">'night'</span>);
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'夜间模式已开启，夜深啦，早点休息'</span>);
+                box.checked=<span class="hljs-literal">true</span>;
+            }<span class="hljs-keyword">else</span>{
+                <span class="hljs-built_in">document</span>.body.classList.remove(<span class="hljs-string">'night'</span>);
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'夜间模式已关闭'</span>);
+                box.checked=<span class="hljs-literal">false</span>;
             }
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</code></pre>
 <ul>
 <li><strong>加入cookie</strong></li>
 </ul>
 <p>虽然是晚上，但是我就喜欢日间模式呀，为什么我明明关了夜间模式了，下一个页面又给我自动打开了！</p>
 <p>这种情况不用怕，cookie轻松解决它。</p>
-<pre class="line-numbers language-lang-javascript"><code class="language-lang-javascript">//新增一个cookie，如果night=1，则开启夜间模式，否则关闭。
-//因为cookie缓存在本地，所以即使点开新的网页设定也不会改变。
+<pre class="highlight"><code class="javascript"><span class="hljs-comment">//新增一个cookie，如果night=1，则开启夜间模式，否则关闭。</span>
+<span class="hljs-comment">//因为cookie缓存在本地，所以即使点开新的网页设定也不会改变。</span>
 ...
-//这部分是页面加载时的自动判定代码
+<span class="hljs-comment">//这部分是页面加载时的自动判定代码</span>
 ...
-if(document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") === '')//如果cookie不存在，则按照时间判定，并且将此时的状态写入cookie
-        {
-            if(new Date().getHours() >=22 || new Date().getHours() <= 6){
-                document.body.classList.add('night');
-                document.cookie = "night=1;path=/;SameSite=Strict";
-                console.log('夜间模式已开启，夜深啦，早点休息');
-                box.checked=true;
-            }else{
-                document.body.classList.remove('night');
-                document.cookie = "night=0;path=/;SameSite=Strict";
-                console.log('夜间模式已关闭');
-                box.checked=false;
+if(<span class="hljs-built_in">document</span>.cookie.replace(<span class="hljs-regexp">/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/</span>, <span class="hljs-string">"$1"</span>) === <span class="hljs-string">''</span>)<span class="hljs-comment">//如果cookie不存在，则按照时间判定，并且将此时的状态写入cookie</span>
+		{
+            <span class="hljs-keyword">if</span>(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>().getHours() &gt;=<span class="hljs-number">22</span> || <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>().getHours() &lt;= <span class="hljs-number">6</span>){
+                <span class="hljs-built_in">document</span>.body.classList.add(<span class="hljs-string">'night'</span>);
+                <span class="hljs-built_in">document</span>.cookie = <span class="hljs-string">"night=1;path=/;SameSite=Strict"</span>;
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'夜间模式已开启，夜深啦，早点休息'</span>);
+                box.checked=<span class="hljs-literal">true</span>;
+            }<span class="hljs-keyword">else</span>{
+                <span class="hljs-built_in">document</span>.body.classList.remove(<span class="hljs-string">'night'</span>);
+                <span class="hljs-built_in">document</span>.cookie = <span class="hljs-string">"night=0;path=/;SameSite=Strict"</span>;
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'夜间模式已关闭'</span>);
+                box.checked=<span class="hljs-literal">false</span>;
             }
         }
-        else//如果cookie存在，则按照cookie中的设定切换夜间模式
+        <span class="hljs-keyword">else</span><span class="hljs-comment">//如果cookie存在，则按照cookie中的设定切换夜间模式</span>
         {
-            let judge = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") || '0';
-            if (judge == '0') {
-                document.body.classList.remove('night');
-                console.log('cookie_Night_Mode:OFF');
-                box.checked=false;
-            } else if (judge == '1') {
-                document.body.classList.add('night');
-                console.log('cookie_Night_Mode:ON');
-                box.checked=true;
-                console.log(box.checked);
+            <span class="hljs-keyword">let</span> judge = <span class="hljs-built_in">document</span>.cookie.replace(<span class="hljs-regexp">/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/</span>, <span class="hljs-string">"$1"</span>) || <span class="hljs-string">'0'</span>;
+            <span class="hljs-keyword">if</span> (judge == <span class="hljs-string">'0'</span>) {
+                <span class="hljs-built_in">document</span>.body.classList.remove(<span class="hljs-string">'night'</span>);
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'cookie_Night_Mode:OFF'</span>);
+                box.checked=<span class="hljs-literal">false</span>;
+            } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (judge == <span class="hljs-string">'1'</span>) {
+                <span class="hljs-built_in">document</span>.body.classList.add(<span class="hljs-string">'night'</span>);
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'cookie_Night_Mode:ON'</span>);
+                box.checked=<span class="hljs-literal">true</span>;
+                <span class="hljs-built_in">console</span>.log(box.checked);
             }
         }
     ...
-    //手动切换代码同样，切换之后加入cookie记录当前状态
-    //此时可以用cookie作为夜间模式的判定，避免了使用checkbox作
-    //判定时点击出错的问题。
+    <span class="hljs-comment">//手动切换代码同样，切换之后加入cookie记录当前状态</span>
+    <span class="hljs-comment">//此时可以用cookie作为夜间模式的判定，避免了使用checkbox作</span>
+    <span class="hljs-comment">//判定时点击出错的问题。</span>
     ...
-    if(night == '0'){
-            document.body.classList.add('night');
-            document.cookie = "night=1;path=/;SameSite=Strict"
-            console.log('夜间模式被手动开启啦');
-            document.getElementById("switch1").checked=true;
-        }else{
-            document.body.classList.remove('night');
-            document.cookie = "night=0;path=/;SameSite=Strict"
-            console.log('夜间模式被手动关闭啦');
-            document.getElementById("switch1").checked=false;
+    if(night == <span class="hljs-string">'0'</span>){
+            <span class="hljs-built_in">document</span>.body.classList.add(<span class="hljs-string">'night'</span>);
+            <span class="hljs-built_in">document</span>.cookie = <span class="hljs-string">"night=1;path=/;SameSite=Strict"</span>
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'夜间模式被手动开启啦'</span>);
+            <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"switch1"</span>).checked=<span class="hljs-literal">true</span>;
+        }<span class="hljs-keyword">else</span>{
+            <span class="hljs-built_in">document</span>.body.classList.remove(<span class="hljs-string">'night'</span>);
+            <span class="hljs-built_in">document</span>.cookie = <span class="hljs-string">"night=0;path=/;SameSite=Strict"</span>
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'夜间模式被手动关闭啦'</span>);
+            <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"switch1"</span>).checked=<span class="hljs-literal">false</span>;
         }
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</code></pre>
 <ul>
 <li><strong>关于背景的一个小问题。</strong></li>
 </ul>
@@ -162,20 +162,20 @@ if(document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1")
 <p>原因是<code>ios</code>认为这个性能占用过多所以禁用了这个效果。</p>
 <p>所以就出现了chrome上调试明明没问题但是iPhone上就是不对劲的情况。。。</p>
 <p>解决方案也很简单，利用<code>:before</code>在body前新增一个伪类，然后在里面写<code>css</code>就🆗啦。</p>
-<pre class="line-numbers language-lang-css"><code class="language-lang-css">body:before{
-  content: '';
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-background:url("https://img.yocoh.cn/images/2020/11/01/15972576896501994d72a4b81afc7.jpg") center 0 no-repeat;
-  background-size: cover;
+<pre class="highlight"><code class="css"><span class="hljs-selector-tag">body</span><span class="hljs-selector-pseudo">:before</span>{
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">''</span>;
+  <span class="hljs-attribute">position</span>: fixed;
+  <span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+<span class="hljs-attribute">background</span>:<span class="hljs-built_in">url</span>(<span class="hljs-string">"https://img.yocoh.cn/images/2020/11/01/15972576896501994d72a4b81afc7.jpg"</span>) center <span class="hljs-number">0</span> no-repeat;
+  <span class="hljs-attribute">background-size</span>: cover;
 
 }
 //当然对其他元素也能得到相应的效果。
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</code></pre>
 <ul>
 <li><strong>写在最后</strong></li>
 </ul>
