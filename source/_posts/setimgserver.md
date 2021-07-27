@@ -8,7 +8,7 @@ tags:
 
 
 
-![-3.jpg](http://img.yocoh.cn/images/2020/06/19/-3.jpg)
+![-3.jpg](http://file.yocoh.cn/images/2020/06/19/-3.jpg)
 
 > 我使用的是[Chevereto](https://chevereto.com/) ,其他的应该也差不多。
 >
@@ -26,7 +26,7 @@ tags:
 
 
 
-![imagea8d08c1b49e107d7.png](http://img.yocoh.cn/images/2020/06/19/imagea8d08c1b49e107d7.png)
+![imagea8d08c1b49e107d7.png](http://file.yocoh.cn/images/2020/06/19/imagea8d08c1b49e107d7.png)
 
 
 
@@ -84,7 +84,7 @@ location / {
 
 
 
-![image4ab058b485c0be65.png](http://img.yocoh.cn/images/2020/06/19/image4ab058b485c0be65.png)
+![image4ab058b485c0be65.png](http://file.yocoh.cn/images/2020/06/19/image4ab058b485c0be65.png)
 
 
 
@@ -102,7 +102,7 @@ location / {
 
 现在浏览器访问域名，不出意外的话会报错。那是访问权限的问题。原因是我们没有给`app` 这个文件夹写入权限。  
 
-![image6ec1919573ad4175.png](http://img.yocoh.cn/images/2020/06/19/image6ec1919573ad4175.png)
+![image6ec1919573ad4175.png](http://file.yocoh.cn/images/2020/06/19/image6ec1919573ad4175.png)
 
 
 
@@ -112,7 +112,7 @@ location / {
 
 
 
-![image9815cc7dfe54d85e.png](http://img.yocoh.cn/images/2020/06/19/image9815cc7dfe54d85e.png)
+![image9815cc7dfe54d85e.png](http://file.yocoh.cn/images/2020/06/19/image9815cc7dfe54d85e.png)
 
 
 

@@ -15,7 +15,7 @@ date: 2018-09-04 00:14:27
 <center><h3>你好，这里是饮夏。</h3></center>
 
 
-![ef7edee0cb9abe25423fa94797e9c088.png](http://img.yocoh.cn/images/2020/08/30/ef7edee0cb9abe25423fa94797e9c088.png)
+![ef7edee0cb9abe25423fa94797e9c088.png](https://file.yocoh.cn/images/2020/08/30/ef7edee0cb9abe25423fa94797e9c088.png)
 {% meting "30635613" "netease" "song" "loop:none"%}
 
 ### \# 关于博客
@@ -36,7 +36,7 @@ date: 2018-09-04 00:14:27
 
 
 你还可以通过关注公众号阅读我的更多想法。
-![qrcode_for_gh_1b207a1587f7_258.jpg](http://img.yocoh.cn/images/2020/06/20/qrcode_for_gh_1b207a1587f7_258.jpg)
+![qrcode_for_gh_1b207a1587f7_258.jpg](https://file.yocoh.cn/images/2020/06/20/qrcode_for_gh_1b207a1587f7_258.jpg)
 
 ### \# 时间轴
 - 2018.09.04 建立，基于Wordpress
@@ -48,8 +48,8 @@ date: 2018-09-04 00:14:27
 - 2020.07.03 添加了Aplayer
 - 2020.07.19 给评论添加了邮件提醒
 - 2020.09.15 由于网络环境，网站终于进行了备案，迁移到阿里云  
-...
-
+- 2020.10.26 新增了夜间模式
+- 2020.11.23 全站加速，图片加载飞起
 
 ### \# 联系我
 
@@ -67,12 +67,6 @@ date: 2018-09-04 00:14:27
 
 ### \# 支持我
 
-
-
-<center class = "half">
-    <img src = 'https://img.yocoh.cn/images/2020/09/15/1600087726.jpg'  width = "200">
-    <img src = "https://img.yocoh.cn/images/2020/09/15/image.png"  width = "200" >
-</center>
 
 
 

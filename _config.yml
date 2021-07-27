@@ -160,3 +160,13 @@ markdown_it_plus:
 aplayer:
   enable: true
   meting: true
+
+  #主页隐藏设置
+index2_generator:
+  - layout: 'index' # use existing index layout
+    path: ''
+    index: true # Set index true
+    include:
+      - category 饮夏 # include article which category
+    exclude:
+

@@ -7,7 +7,7 @@ categories:
 tags:
 - blog插件
 ---
-![v2-cc1e57e54d4e657042e6d5c310cbf41f_r.jpg](http://img.yocoh.cn/images/2020/07/09/v2-cc1e57e54d4e657042e6d5c310cbf41f_r.jpg)
+![v2-cc1e57e54d4e657042e6d5c310cbf41f_r.jpg](http://file.yocoh.cn/images/2020/07/09/v2-cc1e57e54d4e657042e6d5c310cbf41f_r.jpg)
 
 >其实原先主题自带了两种评论方式为博客设置评论服务：[Disqus](https://disqus.com/) 与[LiveRe](https://livere.com/) 。
 >
@@ -37,7 +37,7 @@ tags:
   
 
 
-![官网说明文档](http://img.yocoh.cn/images/2020/06/19/valine.png):
+![官网说明文档](http://file.yocoh.cn/images/2020/06/19/valine.png):
 
   
 
@@ -164,7 +164,7 @@ valine:
   
 
 
-![将域名添加入安全组](http://img.yocoh.cn/images/2020/06/19/QQ20200619175210.png)
+![将域名添加入安全组](http://file.yocoh.cn/images/2020/06/19/QQ20200619175210.png)
 
   
 
