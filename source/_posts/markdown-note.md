@@ -366,7 +366,7 @@ $$
 
 
 
-> 进阶示例效果如下：
+> 进阶示例如下：
 
 {% meting "363276397" "netease" "playlist"  "mutex:false" "listmaxheight:340px" "preload:none" "theme:#ad7a86"%}
 

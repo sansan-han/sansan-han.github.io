@@ -167,6 +167,9 @@ index2_generator:
     path: ''
     index: true # Set index true
     include:
-      - category 饮夏 # include article which category
+      - category 饮夏
+      - category 阿莲
+      - category 姐姐
+      # include article which category
     exclude:
 
