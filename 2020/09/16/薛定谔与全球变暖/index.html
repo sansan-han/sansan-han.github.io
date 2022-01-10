@@ -38,8 +38,11 @@
  // 对所有链接跳转事件绑定pjax容器container
 
 $(document).pjax('a[target!=_blank]', '#main-container', {fragment:'#main-container', timeout:8000})
-$(document).on('pjax:send', function() {  NProgress.start();})
-$(document).on('pjax:complete', function() {  NProgress.done();})
+$(document).on('pjax:send', function() {
+
+    NProgress.start();
+})
+$(document).on('pjax:complete', function() {  NProgress.done();loadMeting();})
 </script><meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/css/prism.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
 <script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
@@ -56,7 +59,7 @@ user-select:none;
 <p>“就像二十二年前的今天下了雪，而现在气温是三十五度。你非要问我为什么我也回答不上来，只能告诉你可能是全球变暖。”</p>
 <p><img src="https://file.yocoh.cn/images/2020/06/19/F74CCA8F-C651-4A6E-A602-59C471F88F57.jpg" alt="F74CCA8F-C651-4A6E-A602-59C471F88F57.jpg" /></p>
 
-    <div id="aplayer-tYrlFLup" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-wxNPcmWn" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="002kkJSE0IeS1F" data-server="tencent" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86" data-loop="none""
     ></div>
 <p>五年如一日喜欢一个人难不难？老夏对我说，难，太难了，而且不值得。他又灌了一口酒。我张了张嘴，最后还是提起瓶子陪他又吹了一瓶。</p>
@@ -138,6 +141,7 @@ user-select:none;
 </style>
 
 </footer></div></div><meting-js
+            class="aplayer no-destroy"
             server="netease"
             type="playlist"
             id="7128764926"

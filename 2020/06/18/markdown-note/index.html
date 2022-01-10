@@ -36,8 +36,11 @@
  // 对所有链接跳转事件绑定pjax容器container
 
 $(document).pjax('a[target!=_blank]', '#main-container', {fragment:'#main-container', timeout:8000})
-$(document).on('pjax:send', function() {  NProgress.start();})
-$(document).on('pjax:complete', function() {  NProgress.done();})
+$(document).on('pjax:send', function() {
+
+    NProgress.start();
+})
+$(document).on('pjax:complete', function() {  NProgress.done();loadMeting();})
 </script><meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/css/prism.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
 <script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
@@ -319,14 +322,14 @@ $$
 <p>简单示例效果如下：</p>
 </blockquote>
 
-    <div id="aplayer-bTfrSWzq" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-bYZhmHQe" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="26201898" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
     ></div>
 <blockquote>
 <p>进阶示例如下：</p>
 </blockquote>
 
-    <div id="aplayer-ATybzRsL" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-Efcnpdfq" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="363276397" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"
     ></div>
 <p>以下是有关<code>{meting %}</code>的选项列表：</p>
@@ -438,6 +441,7 @@ user-select:none;
 </style>
 
 </footer></div></div><meting-js
+            class="aplayer no-destroy"
             server="netease"
             type="playlist"
             id="7128764926"

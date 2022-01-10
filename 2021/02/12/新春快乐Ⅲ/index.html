@@ -36,8 +36,11 @@
  // 对所有链接跳转事件绑定pjax容器container
 
 $(document).pjax('a[target!=_blank]', '#main-container', {fragment:'#main-container', timeout:8000})
-$(document).on('pjax:send', function() {  NProgress.start();})
-$(document).on('pjax:complete', function() {  NProgress.done();})
+$(document).on('pjax:send', function() {
+
+    NProgress.start();
+})
+$(document).on('pjax:complete', function() {  NProgress.done();loadMeting();})
 </script><meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/css/prism.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
 <script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
@@ -51,7 +54,7 @@ user-select:none;
 
 </footer></div></div></div><div id="main-container" class="col-sm-9 col-xs-12 main-container invisible"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post-container"><p class="post-title"><a>新年快乐。</a></p><p class="post-meta"><span class="date meta-item">发布于&nbsp;2021-02-12</span><span class="meta-item"><i class="fa fa-folder"></i><span>&nbsp;</span><a href="/categories/饮夏/" title="饮夏" class="a-tag">饮夏</a><span>&nbsp;</span></span><span class="meta-item"><i class="fa fa-tag"></i><span>&nbsp;</span><a href="/tags/新年快乐/" title="新年快乐" class="a-tag">新年快乐</a><span>&nbsp;</span></span></p><p class="post-abstract"><h3 id="年轻的意义就是成长"><a class="markdownIt-Anchor" href="#年轻的意义就是成长"></a> 年轻的意义就是成长。</h3>
 
-    <div id="aplayer-PclDIIRK" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-zBluxZGG" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="462523414" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86" data-loop="none""
     ></div>
 <p>新年快乐。</p>
@@ -100,6 +103,7 @@ user-select:none;
 </style>
 
 </footer></div></div><meting-js
+            class="aplayer no-destroy"
             server="netease"
             type="playlist"
             id="7128764926"

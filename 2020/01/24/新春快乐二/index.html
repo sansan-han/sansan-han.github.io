@@ -36,8 +36,11 @@
  // 对所有链接跳转事件绑定pjax容器container
 
 $(document).pjax('a[target!=_blank]', '#main-container', {fragment:'#main-container', timeout:8000})
-$(document).on('pjax:send', function() {  NProgress.start();})
-$(document).on('pjax:complete', function() {  NProgress.done();})
+$(document).on('pjax:send', function() {
+
+    NProgress.start();
+})
+$(document).on('pjax:complete', function() {  NProgress.done();loadMeting();})
 </script><meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/css/prism.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
 <script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
@@ -54,7 +57,7 @@ user-select:none;
 </blockquote>
 <p><img src="https://file.yocoh.cn/images/2020/06/19/0FE4CAD9-F103-452F-AEBC-B6B45DB54B14.jpg" alt="0FE4CAD9-F103-452F-AEBC-B6B45DB54B14.jpg" /></p>
 
-    <div id="aplayer-SBlGxLbV" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-NsxIpGiy" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="1363948882" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86" data-loop="none""
     ></div>
 <p>不知何时起，时间的流逝就变得清晰了起来。</p>
@@ -87,6 +90,7 @@ user-select:none;
 </style>
 
 </footer></div></div><meting-js
+            class="aplayer no-destroy"
             server="netease"
             type="playlist"
             id="7128764926"

@@ -36,8 +36,11 @@
  // 对所有链接跳转事件绑定pjax容器container
 
 $(document).pjax('a[target!=_blank]', '#main-container', {fragment:'#main-container', timeout:8000})
-$(document).on('pjax:send', function() {  NProgress.start();})
-$(document).on('pjax:complete', function() {  NProgress.done();})
+$(document).on('pjax:send', function() {
+
+    NProgress.start();
+})
+$(document).on('pjax:complete', function() {  NProgress.done();loadMeting();})
 </script><meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/css/prism.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body class="night"><div id="stage" class="container"><div class="row"><div id="side-bar" class="col-sm-3 col-xs-12 side-container invisible"><div class="vertical-text site-title"><h3 tabindex="-1" class="site-title-small"><a href="/" class="a-title">与世界分享世界</a></h3><h1 tabindex="-1" class="site-title-large"><a href="/" class="a-title">饮夏</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div id="site-nav" class="site-title-links"><ul><li><a href="/" class="current">首页</a></li><li><a href="/archives">归档</a></li><li><a href="/categories">分类</a></li><li><a href="/tags">标签</a></li><li><a href="/about/index.html">关于</a></li><li class="soc"><a href="https://github.com/sansan-han" target="_blank" rel="noopener noreferrer"><i class="fa fa-github">&nbsp;</i></a><a href="http://weibo.com/u/5943175365" target="_blank" rel="noopener noreferrer"><i class="fa fa-weibo">&nbsp;</i></a><a href="https://blog.yocoh.cn/atom.xml" target="_blank" rel="noopener noreferrer"><i class="fa fa-rss">&nbsp;</i></a></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2022&nbsp;<a target="_blank" href="https://yocoh.cn" rel="noopener noreferrer">饮夏</a></p><!--input.switch#switch1(type="checkbox" onclick="switchNightMode()")--><p class = "night_switch"  onclick="switchNightMode()" ><script src="https://yocoh.cn/api.php"></script></p>
 <style>
@@ -59,6 +62,7 @@ user-select:none;
 </style>
 
 </footer></div></div><meting-js
+            class="aplayer no-destroy"
             server="netease"
             type="playlist"
             id="7128764926"

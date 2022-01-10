@@ -36,8 +36,11 @@
  // 对所有链接跳转事件绑定pjax容器container
 
 $(document).pjax('a[target!=_blank]', '#main-container', {fragment:'#main-container', timeout:8000})
-$(document).on('pjax:send', function() {  NProgress.start();})
-$(document).on('pjax:complete', function() {  NProgress.done();})
+$(document).on('pjax:send', function() {
+
+    NProgress.start();
+})
+$(document).on('pjax:complete', function() {  NProgress.done();loadMeting();})
 </script><meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/css/prism.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
 <script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
@@ -53,7 +56,7 @@ user-select:none;
 <p>以后就有比我更会爱她的人来爱着她了。</p>
 </blockquote>
 
-    <div id="aplayer-ifnmGQFi" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-xmwAbDuc" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="1842025914" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86" data-loop="none""
     ></div>  
 <p>2013年的时候，快乐男声正火爆，我还记得那年的冠军是华晨宇。我姐和她同学聊天，说第一次见我追星追得那么痴迷，那时候我特别喜欢贾盛强，小本本上写满了他的名字生日曾用名，但其实现在还记得的他唯一一首歌也不过是第一次听他唱的姐姐。</p>
@@ -84,6 +87,7 @@ user-select:none;
 </style>
 
 </footer></div></div><meting-js
+            class="aplayer no-destroy"
             server="netease"
             type="playlist"
             id="7128764926"

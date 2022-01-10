@@ -36,8 +36,11 @@
  // 对所有链接跳转事件绑定pjax容器container
 
 $(document).pjax('a[target!=_blank]', '#main-container', {fragment:'#main-container', timeout:8000})
-$(document).on('pjax:send', function() {  NProgress.start();})
-$(document).on('pjax:complete', function() {  NProgress.done();})
+$(document).on('pjax:send', function() {
+
+    NProgress.start();
+})
+$(document).on('pjax:complete', function() {  NProgress.done();loadMeting();})
 </script><meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/css/prism.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
 <script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
@@ -53,7 +56,7 @@ user-select:none;
 <p>将来若有人跟我争，他答应不会默不作声。</p>
 </blockquote>
 
-    <div id="aplayer-MytzSsLr" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-bPsrBPip" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="249332" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86" data-loop="none""
     ></div>  
 <p>今晚妈妈和朋友打麻将的时候，聊到被拜托给隔壁楼的一个姐姐找对象。</p>
@@ -96,6 +99,7 @@ user-select:none;
 </style>
 
 </footer></div></div><meting-js
+            class="aplayer no-destroy"
             server="netease"
             type="playlist"
             id="7128764926"

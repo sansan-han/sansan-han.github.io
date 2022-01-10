@@ -38,8 +38,11 @@
  // 对所有链接跳转事件绑定pjax容器container
 
 $(document).pjax('a[target!=_blank]', '#main-container', {fragment:'#main-container', timeout:8000})
-$(document).on('pjax:send', function() {  NProgress.start();})
-$(document).on('pjax:complete', function() {  NProgress.done();})
+$(document).on('pjax:send', function() {
+
+    NProgress.start();
+})
+$(document).on('pjax:complete', function() {  NProgress.done();loadMeting();})
 </script><meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/css/prism.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
 <script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
@@ -53,7 +56,7 @@ user-select:none;
 
 </footer></div></div></div><div id="main-container" class="col-sm-9 col-xs-12 main-container invisible"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post-container"><p class="post-title"><a>台风季。</a></p><p class="post-meta"><span class="date meta-item">发布于&nbsp;2019-08-30</span><span class="meta-item"><i class="fa fa-folder"></i><span>&nbsp;</span><a href="/categories/饮夏/" title="饮夏" class="a-tag">饮夏</a><span>&nbsp;</span></span><span class="meta-item"><i class="fa fa-tag"></i><span>&nbsp;</span><a href="/tags/故事/" title="故事" class="a-tag">故事</a><span>&nbsp;</span></span></p><p class="post-abstract"><p><img src="http://file.yocoh.cn/images/2020/08/30/1597257680359.jpg" alt="chap1" /></p>
 
-    <div id="aplayer-ejisffOI" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-LMXxNOGi" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="326705" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86" data-loop="none"
     ></div>
 <p>今年台风季来得特别早。昨天刚发布的通知，早晨拉开窗帘的时候就已经是阴雨沉沉了。失去了阳光的叫醒，在这种日子里，就总想着再回到床上去睡一会儿。</p>
@@ -109,7 +112,7 @@ user-select:none;
 <p>「自由地支配时间的快感和一种怎样来支配这段时间的犹豫往往老是搅和在一起。」</p>
 <p>「情人。」</p>
 
-    <div id="aplayer-XtBwkmxB" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-HCfCdIVX" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="003mKWLh2nEpxt" data-server="tencent" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86" data-loop="none"
     ></div>
 <p>这算是晴子和阿辰的一个聊天项目之一，一方提出一句话时，另一方回答出出自的地方。晴子总好奇阿辰是不是作为一个影子和她一起生活到现在的，不然为什么这种聊天互相都总能脱口而出。不过根据两个人交流的成长经验，两个人在之前是完全没可能有交集。</p>
@@ -193,7 +196,7 @@ user-select:none;
 <p>「不然怎么能写出这样子甜甜的恋爱呀。齁死我了。」</p>
 <p>「正是因为没有见过爱情，所以才会觉得爱情这么美好。」</p>
 
-    <div id="aplayer-FmfOtlKe" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-LPibNwKc" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="000EnMb70Tldm3" data-server="tencent" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86" data-loop="none"
     ></div>
 <p>台风季要过去了。</p>
@@ -239,6 +242,7 @@ user-select:none;
 </style>
 
 </footer></div></div><meting-js
+            class="aplayer no-destroy"
             server="netease"
             type="playlist"
             id="7128764926"
