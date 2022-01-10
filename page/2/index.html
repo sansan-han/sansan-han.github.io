@@ -1,10 +1,10 @@
 <!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="饮夏"><link href="https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css" rel="stylesheet"><script>(function(d) {
-  var config = {
-    kitId: 'mtg4doj',
-    scriptTimeout: 3000,
-    async: true
-  },
-  h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    var config = {
+            kitId: 'mtg4doj',
+            scriptTimeout: 3000,
+            async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
 })(document);
 </script><title>饮夏的blog</title><meta name="description" content="与世界分享世界"><meta name="keywords" content=""><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/Aplayer.min.css"><link rel="stylesheet" href="/css/style.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.css">
 <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.js"></script>
@@ -31,13 +31,21 @@
     background: rgba(88, 178,220, 0.8);
 }
 </style>
-<meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/css/prism.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body class="night"><div id="stage" class="container"><div class="row"><div id="side-bar" class="col-sm-3 col-xs-12 side-container invisible"><div class="vertical-text site-title"><h3 tabindex="-1" class="site-title-small"><a href="/" class="a-title">与世界分享世界</a></h3><h1 tabindex="-1" class="site-title-large"><a href="/" class="a-title">饮夏</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div id="site-nav" class="site-title-links"><ul><li><a href="/" class="current">首页</a></li><li><a href="/archives">归档</a></li><li><a href="/categories">分类</a></li><li><a href="/tags">标签</a></li><li><a href="/about/index.html">关于</a></li><li class="soc"><a href="https://github.com/sansan-han" target="_blank" rel="noopener noreferrer"><i class="fa fa-github">&nbsp;</i></a><a href="http://weibo.com/u/5943175365" target="_blank" rel="noopener noreferrer"><i class="fa fa-weibo">&nbsp;</i></a><a href="https://blog.yocoh.cn/atom.xml" target="_blank" rel="noopener noreferrer"><i class="fa fa-rss">&nbsp;</i></a></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2022&nbsp;<a target="_blank" href="https://yocoh.cn" rel="noopener noreferrer">饮夏</a></p><!--input.switch#switch1(type="checkbox" onclick="switchNightMode()")--><p class = "night_switch" onclick="switchNightMode()" ><script src="https://yocoh.cn/api.php"></script></p>
+<script src="/js/jquery-3.1.0.min.js"></script><script src="/js/jquery.pjax.js"></script><script src="/js/nprogress.js"></script><link rel="stylesheet" href="/css/nprogress.css"><script>
+
+ // 对所有链接跳转事件绑定pjax容器container
+
+$(document).pjax('a[target!=_blank]', '#main-container', {fragment:'#main-container', timeout:8000})
+$(document).on('pjax:send', function() {  NProgress.start();})
+$(document).on('pjax:complete', function() {  NProgress.done();})
+</script><meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body class="night"><div id="stage" class="container"><div class="row"><div id="side-bar" class="col-sm-3 col-xs-12 side-container invisible"><div class="vertical-text site-title"><h3 tabindex="-1" class="site-title-small"><a href="/" class="a-title">与世界分享世界</a></h3><h1 tabindex="-1" class="site-title-large"><a href="/" class="a-title">饮夏</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div id="site-nav" class="site-title-links"><ul><li><a href="/" class="current">首页</a></li><li><a href="/archives">归档</a></li><li><a href="/categories">分类</a></li><li><a href="/tags">标签</a></li><li><a href="/about/index.html">关于</a></li><li class="soc"><a href="https://github.com/sansan-han" target="_blank" rel="noopener noreferrer"><i class="fa fa-github">&nbsp;</i></a><a href="http://weibo.com/u/5943175365" target="_blank" rel="noopener noreferrer"><i class="fa fa-weibo">&nbsp;</i></a><a href="https://blog.yocoh.cn/atom.xml" target="_blank" rel="noopener noreferrer"><i class="fa fa-rss">&nbsp;</i></a></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2022&nbsp;<a target="_blank" href="https://yocoh.cn" rel="noopener noreferrer">饮夏</a></p><!--input.switch#switch1(type="checkbox" onclick="switchNightMode()")--><p class = "night_switch"  onclick="switchNightMode()" ><script src="https://yocoh.cn/api.php"></script></p>
 <style>
 .night_switch{
 user-select:none;
 }
 </style>
+
 </footer></div></div></div><div id="main-container" class="col-sm-9 col-xs-12 main-container invisible"><div class="autopagerize_page_element"><div class="content"><div class="post-container"><p class="post-title"><a href="/2020/11/11/%E5%86%AC%E6%97%A5%E5%9B%9E%E4%BF%A1/">冬日回信。</a></p><p class="post-meta"><span class="date meta-item">发布于&nbsp;2020-11-11</span><span class="meta-item"><i class="fa fa-folder"></i><span>&nbsp;</span><a href="/categories/饮夏/" title="饮夏" class="a-tag">饮夏</a><span>&nbsp;</span></span><span class="meta-item"><i class="fa fa-tag"></i><span>&nbsp;</span><a href="/tags/随笔/" title="随笔" class="a-tag">随笔</a><span>&nbsp;</span></span></p><p class="post-abstract">
 持续地稍微努力着。
 
@@ -91,12 +99,13 @@ user-select:none;
 
 
 
-    </p></div><div class="pagination no-margin-bottom"><p class="clearfix"><p> 第 2 页 / 共 3 页 &nbsp;</p><p><span class="pre pagbuttons"><i class="fa fa-angle-double-left"></i>&nbsp;<a role="navigation" href="/">上一页</a></span><span>&nbsp;</span><span class="next pagbuttons"><a role="navigation" href="/page/3/">下一页</a>&nbsp;<i class="fa fa-angle-double-right"></i></span></p></p></div></div></div><div class="visible-xs site-bottom-footer"><footer><p>&copy;&nbsp;2022&nbsp;<a target="_blank" href="https://yocoh.cn" rel="noopener noreferrer">饮夏</a></p><!--input.switch#switch1(type="checkbox" onclick="switchNightMode()")--><p class = "night_switch" onclick="switchNightMode()" ><script src="https://yocoh.cn/api.php"></script></p>
+    </p></div><div class="pagination no-margin-bottom"><p class="clearfix"><p> 第 2 页 / 共 3 页 &nbsp;</p><p><span class="pre pagbuttons"><i class="fa fa-angle-double-left"></i>&nbsp;<a role="navigation" href="/">上一页</a></span><span>&nbsp;</span><span class="next pagbuttons"><a role="navigation" href="/page/3/">下一页</a>&nbsp;<i class="fa fa-angle-double-right"></i></span></p></p></div></div></div><div class="visible-xs site-bottom-footer"><footer><p>&copy;&nbsp;2022&nbsp;<a target="_blank" href="https://yocoh.cn" rel="noopener noreferrer">饮夏</a></p><!--input.switch#switch1(type="checkbox" onclick="switchNightMode()")--><p class = "night_switch"  onclick="switchNightMode()" ><script src="https://yocoh.cn/api.php"></script></p>
 <style>
 .night_switch{
 user-select:none;
 }
 </style>
+
 </footer></div></div><meting-js
             server="netease"
             type="playlist"
@@ -148,4 +157,4 @@ user-select:none;
                 console.log(box.checked);
             }
         }
-</script></div></div><script src="/js/jquery-3.1.0.min.js"></script><script src="/js/bootstrap.min.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/google-analytics.js"></script><script src="/js/typography.js"></script><script src="https://git.yocoh.cn/img_full.js"></script></body></html>
+</script></div></div><script src="/js/bootstrap.min.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/google-analytics.js"></script><script src="/js/typography.js"></script><script src="/js/img_full.js"></script></body></html>
