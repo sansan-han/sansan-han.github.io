@@ -29,6 +29,7 @@
     "hexo-server": "^1.0.0",
     "hexo-tag-aplayer": "^3.0.4",
     "hexo-tag-cplayer": "^1.0.0",
+    "jquery-pjax": "^2.0.1",
     "markdown-it-katex": "^2.0.3",
     "meting": "^2.0.1",
     "valine": "^1.4.14"
