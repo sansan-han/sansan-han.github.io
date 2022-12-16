@@ -8,7 +8,7 @@ subtitle: ''
 description: '与世界分享世界'
 keywords:
 author: "饮夏"
-language: "zh-cn"
+language: zh-CN
 timezone: ''
 
 # URL
@@ -93,8 +93,8 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-#theme: typography
-theme: next
+theme: typography
+#theme: next
 
 plugin:
   - hexo-generator-category-enhance

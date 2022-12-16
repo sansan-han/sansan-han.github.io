@@ -33,5 +33,10 @@
     "markdown-it-katex": "^2.0.3",
     "meting": "^2.0.1",
     "valine": "^1.4.14"
-  }
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
