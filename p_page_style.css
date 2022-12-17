@@ -1,0 +1,123 @@
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>* {
+  padding: 0;
+  margin: 0;
+}
+
+html,body {
+  height: 100%;
+}
+
+body {
+  background-color: rgba(223, 223, 255, 0.39);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  font-size: 16rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+.text {
+  fill: none;
+  stroke-width: 5;
+  stroke-dasharray: 0 240;
+  stroke-dashoffset: 0;
+}
+
+.text:nth-child(4n + 1) {
+  stroke: rgb(201,55,103);
+  animation: text1 4s ease-in-out forwards;
+}
+.text:nth-child(4n + 2) {
+  stroke: rgb(56,202,249);
+  animation: text2 4s ease-in-out forwards;
+}
+.text:nth-child(4n + 3) {
+  stroke: rgb(154,200,56);
+  animation: text3 4s ease-in-out forwards;
+}
+.text:nth-child(4n + 4) {
+  stroke: rgb(9,149,102);
+  animation: text4 4s ease-in-out forwards;
+}
+
+@keyframes text1 {
+  100% {
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 60 180;
+  }
+}
+
+@keyframes text2 {
+  100% {
+    stroke-dashoffset: 1060;
+    stroke-dasharray: 60 180;
+  }
+}
+
+@keyframes text3 {
+  100% {
+    stroke-dashoffset: 1120;
+    stroke-dasharray: 60 180;
+  }
+}
+
+@keyframes text4 {
+  100% {
+    stroke-dashoffset: 1180;
+    stroke-dasharray: 60 180;
+  }
+}
+
+.main-container {
+  width: 80%;
+  max-width: 1000px;
+  max-height: 500px;
+  min-width: 600px;
+  background-color: white;
+  font-size: 0;
+  border-radius: 20px;
+  box-shadow: 0 0 50px 0 rgba(146, 146, 146, 0.63);
+}
+
+.main-container .container-item {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.main-container .img-container {
+  background-color: rgba(253, 216, 168, 0.692);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+}
+.img-container{
+  text-align: center;
+}
+.main-container .text-container .code {
+  font-size: clamp(150px,20vw,200px);
+  font-family: 'Arial Narrow';
+  color: rgb(64, 64, 64);
+  font-weight: bolder;
+  text-align: center;
+}
+
+.main-container .text-container .msg {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.main-container .text-container .action {
+  font-size: 15px;
+  font-weight: 200;
+  text-align: center;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
