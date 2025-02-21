@@ -44,7 +44,7 @@ $(document).on('pjax:send', function() {
 })
 $(document).on('pjax:complete', function() {  NProgress.done();loadMeting();})
 </script><meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/css/prism.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body class="night"><div id="stage" class="container"><div class="row"><div id="side-bar" class="col-sm-3 col-xs-12 side-container invisible"><div class="vertical-text site-title"><h3 tabindex="-1" class="site-title-small"><a href="/" class="a-title">与世界分享世界</a></h3><h1 tabindex="-1" class="site-title-large"><a href="/" class="a-title">饮夏</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div id="site-nav" class="site-title-links"><ul><li><a href="/">首页</a></li><li><a href="/archives">归档</a></li><li><a href="/categories">分类</a></li><li><a href="/tags">标签</a></li><li><a href="/404.html"></a></li><li><a href="/400.html"></a></li><li><a href="/403.html"></a></li><li><a href="/414.html"></a></li><li><a href="/500.html"></a></li><li><a href="/501.html"></a></li><li><a href="/502.html"></a></li><li><a href="/503.html"></a></li><li><a href="/p_page_style.css"></a></li><li><a href="/about/index.html">关于</a></li><li class="soc"><a href="https://github.com/sansan-han" target="_blank" rel="noopener noreferrer"><i class="fa fa-github">&nbsp;</i></a><a href="http://weibo.com/u/5943175365" target="_blank" rel="noopener noreferrer"><i class="fa fa-weibo">&nbsp;</i></a><a href="https://blog.yocoh.cn/atom.xml" target="_blank" rel="noopener noreferrer"><i class="fa fa-rss">&nbsp;</i></a></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2025&nbsp;<a target="_blank" href="https://yocoh.cn" rel="noopener noreferrer">饮夏</a></p><!--input.switch#switch1(type="checkbox" onclick="switchNightMode()")--><p class = "night_switch"  onclick="switchNightMode()" ><script src="https://yocoh.cn/api.php"></script></p>
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body class="night"><div id="stage" class="container"><div class="row"><div id="side-bar" class="col-sm-3 col-xs-12 side-container invisible"><div class="vertical-text site-title"><h3 tabindex="-1" class="site-title-small"><a href="/" class="a-title">与世界分享世界</a></h3><h1 tabindex="-1" class="site-title-large"><a href="/" class="a-title">饮夏</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div id="site-nav" class="site-title-links"><ul><li><a href="/">首页</a></li><li><a href="/archives">归档</a></li><li><a href="/categories">分类</a></li><li><a href="/tags">标签</a></li><li><a href="/414.html"></a></li><li><a href="/400.html"></a></li><li><a href="/404.html"></a></li><li><a href="/500.html"></a></li><li><a href="/501.html"></a></li><li><a href="/403.html"></a></li><li><a href="/502.html"></a></li><li><a href="/503.html"></a></li><li><a href="/p_page_style.css"></a></li><li><a href="/about/index.html">关于</a></li><li class="soc"><a href="https://github.com/sansan-han" target="_blank" rel="noopener noreferrer"><i class="fa fa-github">&nbsp;</i></a><a href="http://weibo.com/u/5943175365" target="_blank" rel="noopener noreferrer"><i class="fa fa-weibo">&nbsp;</i></a><a href="https://blog.yocoh.cn/atom.xml" target="_blank" rel="noopener noreferrer"><i class="fa fa-rss">&nbsp;</i></a></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2025&nbsp;<a target="_blank" href="https://yocoh.cn" rel="noopener noreferrer">饮夏</a></p><!--input.switch#switch1(type="checkbox" onclick="switchNightMode()")--><p class = "night_switch"  onclick="switchNightMode()" ><script src="https://yocoh.cn/api.php"></script></p>
 <style>
 .night_switch{
 user-select:none;
@@ -56,21 +56,18 @@ user-select:none;
 <p>首先先下载安装包，GitHub上下载它最近的安装包：<a href="https://github.com/writefreely/writefreely/releases" target="_blank" rel="noopener">Write As</a></p>
 <p>解压到项目文件夹。然后运行<code>writefreely config start</code>开始配置流程。</p>
 <p>这里可能会遇到一个command not found 的坑，可以使用下面的方式尝试解决：</p>
-<pre class="highlight"><code class="">tar xvzf writefreely.tar.gz
+<pre><code>tar xvzf writefreely.tar.gz
 cd writefreely
 ./writefreely config start
-</code></pre>
-<p><em>也可以只生成config文件然后手动修改<code>./writefreely config generate</code></em></p>
+</code></pre><p><em>也可以只生成config文件然后手动修改<code>./writefreely config generate</code></em></p>
 <p>跟随引导添加数据库、网站运行方式等信息。</p>
 <p>接着生成存储用户和私有数据所需的加密密钥：</p>
-<pre class="highlight"><code class="">./writefreely keys generate
-</code></pre>
-<p>配置好数据库之后运行以下命令创建必要的表：</p>
-<pre class="highlight"><code class="">./writefreely db init
-</code></pre>
-<p>然后<code>./writefreely</code>就可以运行了。</p>
+<pre><code>./writefreely keys generate
+</code></pre><p>配置好数据库之后运行以下命令创建必要的表：</p>
+<pre><code>./writefreely db init
+</code></pre><p>然后<code>./writefreely</code>就可以运行了。</p>
 <p>噢，如果是在服务器上运行，在<code>/etc/systemd/system</code>路径下添加一个名为<code>writefreely.service</code>的文件，然后输入以下内容：</p>
-<pre class="highlight"><code class="">[Unit]
+<pre><code>[Unit]
 Description=WriteFreely Instance
 After=syslog.target network.target
 # If MySQL is running on the same machine, uncomment the following 
@@ -87,14 +84,11 @@ Restart=always
 
 [Install]
 WantedBy=multi-user.target
-</code></pre>
-<p>然后运行下面命令启动服务：</p>
-<pre class="highlight"><code class="">sudo systemctl start writefreely
-</code></pre>
-<p>可以运行程序日志命令验证是否启动：</p>
-<pre class="highlight"><code class="">sudo journalctl -f -u writefreely
-</code></pre>
-</p></div><div class="share"><span>分享到</span>&nbsp;<span class="soc"><a href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank" class="fa fa-bookmark"></a></span><span class="soc"><a href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));" class="fa fa-weibo"></a></span><span class="soc"><a href="http://twitter.com/home?status=https://blog.yocoh.cn/2022/03/06/writeas/%20饮夏的blog%20为了摸鱼部署个在线的markdown编辑器" target="_blank" rel="noopener" class="fa fa-twitter"></a></span></div><div class="pagination"><p class="clearfix"><span class="pre pagbuttons"><a role="navigation" href="/2025/02/05/%E7%A9%BA/" title="空"><i class="fa fa-angle-double-left"></i>&nbsp;上一篇: 空</a></span><span>&nbsp;</span><span class="next pagbuttons"><a role="navigation" href="/2022/03/06/ssl%E8%AF%81%E4%B9%A6/" title="ssl证书">下一篇: ssl证书&nbsp;<i class="fa fa-angle-double-right"></i></a></span></p></div><section id="vcomments" class="comments"><style>.comments&quot;margin:30px;padding:10px;background:#fff&quot;@@media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}<key:post class="slug"></key:post><title:post class="title"></title:post></style><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script><script>new Valine({
+</code></pre><p>然后运行下面命令启动服务：</p>
+<pre><code>sudo systemctl start writefreely
+</code></pre><p>可以运行程序日志命令验证是否启动：</p>
+<pre><code>sudo journalctl -f -u writefreely
+</code></pre></p></div><div class="share"><span>分享到</span>&nbsp;<span class="soc"><a href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank" class="fa fa-bookmark"></a></span><span class="soc"><a href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));" class="fa fa-weibo"></a></span><span class="soc"><a href="http://twitter.com/home?status=https://blog.yocoh.cn/2022/03/06/writeas/%20饮夏的blog%20为了摸鱼部署个在线的markdown编辑器" target="_blank" rel="noopener" class="fa fa-twitter"></a></span></div><div class="pagination"><p class="clearfix"><span class="pre pagbuttons"><a role="navigation" href="/2025/02/05/%E7%A9%BA/" title="空"><i class="fa fa-angle-double-left"></i>&nbsp;上一篇: 空</a></span><span>&nbsp;</span><span class="next pagbuttons"><a role="navigation" href="/2022/03/06/ssl%E8%AF%81%E4%B9%A6/" title="ssl证书">下一篇: ssl证书&nbsp;<i class="fa fa-angle-double-right"></i></a></span></p></div><section id="vcomments" class="comments"><style>.comments&quot;margin:30px;padding:10px;background:#fff&quot;@@media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}<key:post class="slug"></key:post><title:post class="title"></title:post></style><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script><script>new Valine({
     el: "#vcomments",
     app_id: 'gwgMS1U22JvVVcg20JqEy6iu-MdYXbMMI',
     app_key: 'doyHiVx9YrwrOO0daNNT78GA',
